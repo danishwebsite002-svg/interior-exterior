@@ -1,0 +1,1933 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Exterior Architecture | Dubai & Abu Dhabi</title>
+    <meta
+      name="description"
+      content="Clean, professional, and animated exterior design services."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Caveat:wght@400;500;600;700&display=swap');
+      
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Outfit", sans-serif;
+      }
+      .font-serif {
+        font-family: "Playfair Display", serif !important;
+      }
+      h1 span, h2 span, h3 span {
+        color: #D9873E;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+        color: #1e293b;
+      }
+
+      /* Custom Colors */
+      .text-accent {
+        color: #d9873e;
+      }
+      .bg-accent {
+        background-color: #d9873e;
+      }
+      .border-accent {
+        border-color: #d9873e;
+      }
+
+      .text-primary-dark {
+        color: #2e3133;
+      }
+      .bg-primary-dark {
+        background-color: #2e3133;
+      }
+
+      /* Arched Image */
+      .arch-image {
+        border-top-left-radius: 999px;
+        border-top-right-radius: 999px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+
+      /* Premium Buttons */
+      .btn-outline {
+        border: 1px solid #e2e8f0;
+        transition: all 0.4s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn-outline:hover {
+        border-color: #d9873e;
+        color: #d9873e;
+        background-color: rgba(217, 135, 62, 0.05);
+        transform: translateY(-2px);
+      }
+
+      .btn-pill {
+        background-color: #2e3133;
+        color: white;
+        border-radius: 999px;
+        padding: 0.875rem 2.5rem;
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.875rem;
+        font-weight: 500;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+      .btn-pill:hover {
+        background-color: #1a1c1d;
+        box-shadow:
+          0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        transform: translateY(-2px);
+      }
+
+      .btn-orange {
+        background-color: #d9873e;
+        color: white;
+        border-radius: 999px;
+        padding: 0.875rem 2.5rem;
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.875rem;
+        font-weight: 600;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 14px 0 rgba(217, 135, 62, 0.39);
+      }
+      .btn-orange:hover {
+        background-color: #c07332;
+        box-shadow: 0 6px 20px rgba(217, 135, 62, 0.23);
+        transform: translateY(-2px);
+      }
+
+      /* Input */
+      .email-input {
+        border: none;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 0.5rem;
+        outline: none;
+        background: transparent;
+        transition: border-color 0.3s;
+      }
+      .email-input:focus {
+        border-bottom-color: #d9873e;
+      }
+
+      /* Smooth Image Hover */
+      .img-hover-zoom {
+        transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .group:hover .img-hover-zoom {
+        transform: scale(1.05);
+      }
+
+      /* Checkmark Icon Customization */
+      .check-icon {
+        color: #d9873e;
+        min-width: 1.5rem;
+        margin-top: 0.25rem;
+      }
+
+      /* Swiper Customization */
+      .swiper-pagination-bullet-active {
+        background-color: #d9873e !important;
+      }
+
+      /* Hero Slider Animations */
+      .slide-up-anim {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1s ease;
+      }
+      .slide-up-anim-delay-1 {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1s ease 0.2s;
+      }
+      .slide-up-anim-delay-2 {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1s ease 0.4s;
+      }
+      .slide-up-anim-delay-3 {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1s ease 0.6s;
+      }
+
+      .swiper-slide-active .slide-up-anim,
+      .swiper-slide-active .slide-up-anim-delay-1,
+      .swiper-slide-active .slide-up-anim-delay-2,
+      .swiper-slide-active .slide-up-anim-delay-3 {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Background Shapes */
+      .bg-shape-1 {
+        position: absolute;
+        top: -10%;
+        right: -5%;
+        width: 400px;
+        height: 400px;
+        background-color: #d9873e;
+        opacity: 0.05;
+        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+        z-index: 0;
+        animation: morph 8s ease-in-out infinite;
+        pointer-events: none;
+      }
+
+      .bg-shape-2 {
+        position: absolute;
+        bottom: 10%;
+        left: -10%;
+        width: 500px;
+        height: 500px;
+        background-color: #2e3133;
+        opacity: 0.03;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        z-index: 0;
+        animation: morph 12s ease-in-out infinite reverse;
+        pointer-events: none;
+      }
+
+      .bg-shape-3 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 800px;
+        height: 800px;
+        background-image: radial-gradient(#d9873e 1px, transparent 1px);
+        background-size: 40px 40px;
+        opacity: 0.15;
+        z-index: 0;
+        border-radius: 50%;
+        mask-image: radial-gradient(circle, black 40%, transparent 70%);
+        -webkit-mask-image: radial-gradient(circle, black 40%, transparent 70%);
+        pointer-events: none;
+      }
+
+      @keyframes morph {
+        0%,
+        100% {
+          border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+        }
+        34% {
+          border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+        }
+        67% {
+          border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+        }
+      }
+
+      /* Off colors */
+      .bg-off-warm {
+        background-color: #fcfaf8;
+      }
+      .bg-off-cool {
+        background-color: #f8f9fa;
+      }
+          .font-signature {
+        font-family: "Caveat", cursive;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-white">
+    <!-- 1. Navbar -->
+    <header
+      class="w-full border-b border-slate-100 bg-white/90 backdrop-blur-md sticky top-0 z-50 transition-all duration-300"
+    >
+      <div
+        class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8 py-5 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-2">
+          <div
+            class="w-6 h-6 rounded-full border-2 border-accent flex items-center justify-center"
+          >
+            <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+          </div>
+          <a
+            href="index.html"
+            class="text-xl font-bold tracking-tight text-primary-dark uppercase"
+            >Exterior</a
+          >
+        </div>
+
+        <nav
+          class="hidden md:flex space-x-8 text-sm font-medium text-slate-600"
+        >
+          <a href="index.html" class="text-accent">Home</a>
+          <a href="services.html" class="hover:text-accent transition-colors"
+            >Services</a
+          >
+          <a href="gallery.html" class="hover:text-accent transition-colors"
+            >Portfolios</a
+          >
+          <a href="blog.html" class="hover:text-accent transition-colors"
+            >Blog</a
+          >
+          <a href="contact.html" class="hover:text-accent transition-colors"
+            >Contact</a
+          >
+        </nav>
+
+        <div class="hidden md:flex items-center space-x-4">
+          <a
+            href="contact.html"
+            class="btn-outline px-6 py-2.5 rounded-full text-sm font-semibold text-slate-700"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. Hero Slider Section -->
+    <section class="w-full relative h-[85vh] md:h-[90vh]">
+      <div class="swiper heroSwiper w-full h-full">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide relative">
+            <div
+              class="absolute inset-0 bg-cover bg-center"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1776784995502-afb418b23d83?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fit=crop&w=2000&q=80');
+              "
+            ></div>
+            <div class="absolute inset-0 bg-slate-900/40"></div>
+            <div
+              class="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 max-w-5xl mx-auto"
+            >
+              <span
+                class="text-accent text-sm md:text-base font-bold tracking-[0.2em] uppercase mb-4 slide-up-anim"
+                >Exclusive Designs</span
+              >
+              <h1
+                class="text-5xl md:text-5xl lg:text-8xl font-bold text-white leading-[1.1] tracking-tight mb-6 slide-up-anim-delay-1"
+              >
+                Design your dream<br />exterior space
+              </h1>
+              <p
+                class="text-slate-200 text-lg md:text-xl mb-10 max-w-2xl slide-up-anim-delay-2 font-light"
+              >
+                We offer a wide range of premium exterior design solutions to
+                make your ultimate sanctuary a reality.
+              </p>
+              <div
+                class="slide-up-anim-delay-3 flex flex-wrap justify-center gap-4"
+              >
+                <a href="services.html" class="btn-orange">Explore Services</a>
+                <a
+                  href="gallery.html"
+                  class="bg-transparent border border-white text-white hover:bg-white hover:text-primary-dark rounded-full px-8 py-3.5 text-sm font-semibold transition-all"
+                  >View Gallery</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide relative">
+            <div
+              class="absolute inset-0 bg-cover bg-center"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1721902024148-287438cf3e05?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+              "
+            ></div>
+            <div class="absolute inset-0 bg-slate-900/40"></div>
+            <div
+              class="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 max-w-5xl mx-auto"
+            >
+              <span
+                class="text-accent text-sm md:text-base font-bold tracking-[0.2em] uppercase mb-4 slide-up-anim"
+                >Masterful Execution</span
+              >
+              <h1
+                class="text-5xl md:text-5xl lg:text-8xl font-bold text-white leading-[1.1] tracking-tight mb-6 slide-up-anim-delay-1"
+              >
+                Uncompromising<br />luxury standards
+              </h1>
+              <p
+                class="text-slate-200 text-lg md:text-xl mb-10 max-w-2xl slide-up-anim-delay-2 font-light"
+              >
+                From conceptual architecture to bespoke furniture procurement
+                from the world's finest design houses.
+              </p>
+              <div class="slide-up-anim-delay-3">
+                <a href="contact.html" class="btn-orange">Book Consultation</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide relative">
+            <div
+              class="absolute inset-0 bg-cover bg-center"
+              style="
+                background-image: url('https://plus.unsplash.com/premium_photo-1676657954811-9409c4830467?q=80&w=687&auto=format&fit=crop');
+              "
+            ></div>
+            <div class="absolute inset-0 bg-slate-900/50"></div>
+            <div
+              class="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 max-w-5xl mx-auto"
+            >
+              <span
+                class="text-accent text-sm md:text-base font-bold tracking-[0.2em] uppercase mb-4 slide-up-anim"
+                >Award Winning</span
+              >
+              <h1
+                class="text-5xl md:text-5xl lg:text-8xl font-bold text-white leading-[1.1] tracking-tight mb-6 slide-up-anim-delay-1"
+              >
+                Iconic residences<br />in the Emirates
+              </h1>
+              <p
+                class="text-slate-200 text-lg md:text-xl mb-10 max-w-2xl slide-up-anim-delay-2 font-light"
+              >
+                Transforming the most exclusive properties in Palm Jumeirah,
+                Emirates Hills, and Saadiyat Island.
+              </p>
+              <div class="slide-up-anim-delay-3">
+                <a href="gallery.html" class="btn-orange">See Portfolios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation -->
+        <div
+          class="swiper-button-next !text-white !opacity-60 hover:!opacity-100 transition-opacity !right-4 md:!right-8"
+        ></div>
+        <div
+          class="swiper-button-prev !text-white !opacity-60 hover:!opacity-100 transition-opacity !left-4 md:!left-8"
+        ></div>
+        <!-- Pagination -->
+        <div class="swiper-pagination !bottom-8"></div>
+      </div>
+    </section>
+
+    <!-- NEW CONTENT EXPANSION: ZIG-ZAG LAYOUT -->
+
+    <!-- ZIG 1: About Us (Image Left, Text Right) -->
+    <section
+      class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8 py-24 overflow-hidden border-t border-slate-100"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <!-- Image Left -->
+        <div class="grid grid-cols-2 gap-4 h-[600px]" data-aos="fade-right">
+          <div
+            class="col-span-1 h-full rounded-2xl overflow-hidden group shadow-lg"
+          >
+            <div
+              class="w-full h-full bg-cover bg-center img-hover-zoom"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1582174847297-a681c87719ad?q=80&w=1149&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+              "
+            ></div>
+          </div>
+          <div class="col-span-1 grid grid-rows-2 gap-4 h-full">
+            <div
+              class="rounded-2xl overflow-hidden group shadow-lg"
+              data-aos="fade-down"
+              data-aos-delay="200"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center img-hover-zoom"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1776784995502-afb418b23d83?q=80&w=1170&auto=format&fit=crop');
+                "
+              ></div>
+            </div>
+            <div
+              class="rounded-2xl overflow-hidden group shadow-lg"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center img-hover-zoom"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1542676012084-a4b1f610452a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fit=crop&w=600&q=80');
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Right -->
+        <div class="pl-0 md:pl-10" data-aos="fade-left">
+          <span
+            class="text-accent text-xs font-bold uppercase tracking-widest mb-4 block"
+            >About Us</span
+          >
+          <h2
+            class="text-4xl md:text-5xl font-bold text-primary-dark mb-6 leading-tight"
+          >
+            Mastering the art of<br />modern luxury
+          </h2>
+          <div class="text-slate-500 mb-8 space-y-6 text-base leading-relaxed">
+            <p>
+              Established as one of the premier exterior architecture firms in
+              the UAE, we specialize in creating bespoke, ultra-luxury
+              environments. Our presence spans across the most exclusive
+              neighborhoods in Dubai and Abu Dhabi, including Palm Jumeirah,
+              Emirates Hills, and Saadiyat Island.
+            </p>
+            <p>
+              We do not simply decorate rooms; we architect atmospheres. By
+              blending rigorous spatial planning with the world's finest
+              materials—sourced directly from artisans in Italy, Spain, and
+              beyond—we craft homes that are both deeply intimate and profoundly
+              magnificent.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-2 gap-8 mb-10 border-t border-slate-100 pt-8"
+          >
+            <div>
+              <h4 class="text-4xl font-light text-primary-dark mb-1">15+</h4>
+              <p
+                class="text-xs text-slate-400 font-bold tracking-widest uppercase"
+              >
+                Years Experience
+              </p>
+            </div>
+            <div>
+              <h4 class="text-4xl font-light text-primary-dark mb-1">200+</h4>
+              <p
+                class="text-xs text-slate-400 font-bold tracking-widest uppercase"
+              >
+                Projects Completed
+              </p>
+            </div>
+          </div>
+
+          <a href="about.html" class="btn-pill group">
+            Our Story
+            <svg
+              class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dedicated Services Section -->
+    <section
+      class="w-full py-24 overflow-hidden border-t border-slate-100 bg-[#F8F9FA]"
+    >
+      <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-10"
+          data-aos="fade-up"
+        >
+          <div>
+            <h2
+              class="text-4xl md:text-5xl font-bold text-primary-dark mb-2 leading-tight tracking-tight"
+            >
+              What services we provide
+            </h2>
+            <p class="text-slate-500 max-w-xl text-lg hidden md:block mt-4">
+              Explore our comprehensive range of premium exterior and exterior
+              design solutions.
+            </p>
+          </div>
+          <a
+            href="services.html"
+            class="mt-6 md:mt-0 inline-block bg-primary-dark text-white rounded-full px-8 py-3.5 font-semibold hover:bg-accent transition-colors duration-300 whitespace-nowrap"
+            >View All Services</a
+          >
+        </div>
+
+        
+        <!-- Swiper Slider -->
+        <div class="swiper servicesSwiper !overflow-visible relative pb-16" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <a href="fixed-and-foldable.html" class="group block cursor-pointer">
+                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1169&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Fixed & Foldable Systems</h3>
+                <p class="text-slate-500 text-sm leading-relaxed pr-4">Versatile glass systems for seamless indoor-outdoor transitions.</p>
+              </a>
+            </div>
+    
+            <div class="swiper-slide">
+              <a href="aluminium-fences.html" class="group block cursor-pointer">
+                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://media.istockphoto.com/id/2227010613/photo/modern-mediterranean-apartment-towers-in-antalya-turkey.webp?a=1&b=1&s=612x612&w=0&k=20&c=29-x6C_2eZlgKmYVOVkYXJA1zA99p9TIlxPPLoTQiEQ=');"></div>
+                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Aluminium Fences</h3>
+                <p class="text-slate-500 text-sm leading-relaxed pr-4">Durable, modern boundary solutions combining security and aesthetics.</p>
+              </a>
+            </div>
+    
+            <div class="swiper-slide">
+              <a href="doors-and-windows.html" class="group block cursor-pointer">
+                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1768226911839-6358bf44eee5?q=80&w=687&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Doors & Windows</h3>
+                <p class="text-slate-500 text-sm leading-relaxed pr-4">High-performance architectural glazing for luxury properties.</p>
+              </a>
+            </div>
+    
+            <div class="swiper-slide">
+              <a href="sliding-doors.html" class="group block cursor-pointer">
+                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1721902024148-287438cf3e05?q=80&w=1170&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Sliding Doors</h3>
+                <p class="text-slate-500 text-sm leading-relaxed pr-4">Minimalist sliding systems maximizing natural light and views.</p>
+              </a>
+            </div>
+    
+            <div class="swiper-slide">
+              <a href="sliding-folding-doors.html" class="group block cursor-pointer">
+                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://plus.unsplash.com/premium_photo-1661962732747-18c93b05292a?q=80&w=1160&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Sliding Folding Doors</h3>
+                <p class="text-slate-500 text-sm leading-relaxed pr-4">Bifold mechanisms to completely open up your living spaces.</p>
+              </a>
+            </div>
+    
+            <div class="swiper-slide">
+              <a href="curtain-walls.html" class="group block cursor-pointer">
+                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1582174847297-a681c87719ad?q=80&w=1149&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Curtain Walls</h3>
+                <p class="text-slate-500 text-sm leading-relaxed pr-4">Structural glass facades engineered for iconic skyscrapers.</p>
+              </a>
+            </div>
+    
+            <div class="swiper-slide">
+              <a href="skylight.html" class="group block cursor-pointer">
+                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1542676012084-a4b1f610452a?q=80&w=1170&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Skylights</h3>
+                <p class="text-slate-500 text-sm leading-relaxed pr-4">Custom overhead glazing bringing natural illumination into deep floor plans.</p>
+              </a>
+            </div>
+    
+            <div class="swiper-slide">
+              <a href="substation-louvers.html" class="group block cursor-pointer">
+                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1714894692377-f4cd26401ee8?q=80&w=1170&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Substation Louvers</h3>
+                <p class="text-slate-500 text-sm leading-relaxed pr-4">Heavy-duty architectural ventilation systems for industrial applications.</p>
+              </a>
+            </div>
+    
+            <div class="swiper-slide">
+              <a href="aluminium-decorative-fins.html" class="group block cursor-pointer">
+                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1628012209120-d9db7abf7eab?q=80&w=736&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Aluminium Decorative Fins</h3>
+                <p class="text-slate-500 text-sm leading-relaxed pr-4">Vertical shading and aesthetic elements for modern elevations.</p>
+              </a>
+            </div>
+    
+            <div class="swiper-slide">
+              <a href="aluminium-decorative-louvers.html" class="group block cursor-pointer">
+                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1527665830090-864a163d49ab?q=80&w=687&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Aluminium Decorative Louvers</h3>
+                <p class="text-slate-500 text-sm leading-relaxed pr-4">Horizontal slat systems for privacy, shading, and facade texture.</p>
+              </a>
+            </div>
+    
+            <div class="swiper-slide">
+              <a href="mashrabiya.html" class="group block cursor-pointer">
+                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1768226911839-6358bf44eee5?q=80&w=687&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Mashrabiya</h3>
+                <p class="text-slate-500 text-sm leading-relaxed pr-4">Traditional Arabic geometric screens fabricated in modern aluminium.</p>
+              </a>
+            </div>
+    
+            <div class="swiper-slide">
+              <a href="pergolas.html" class="group block cursor-pointer">
+                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1696846912973-3233cc80bf86?q=80&w=1170&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Pergolas</h3>
+                <p class="text-slate-500 text-sm leading-relaxed pr-4">Luxury shaded structures for outdoor entertaining and landscaping.</p>
+              </a>
+            </div>
+    
+            <div class="swiper-slide">
+              <a href="private-majlis.html" class="group block cursor-pointer">
+                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1656385959898-7496979e7fd5?q=80&w=1170&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Private Majlis</h3>
+                <p class="text-slate-500 text-sm leading-relaxed pr-4">Exclusive external annexes designed for traditional hospitality.</p>
+              </a>
+            </div>
+    
+            <div class="swiper-slide">
+              <a href="facade.html" class="group block cursor-pointer">
+                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
+                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=710&auto=format&fit=crop');"></div>
+                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Facades</h3>
+                <p class="text-slate-500 text-sm leading-relaxed pr-4">Complete exterior building envelope engineering and cladding.</p>
+              </a>
+            </div>
+    
+          </div>
+          <!-- Custom Scrollbar under slider -->
+          <div class="swiper-scrollbar mt-12 bg-slate-200 !absolute !bottom-0 !left-0 !w-full !h-1 rounded-full overflow-hidden"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZAG 2: What We Do (Text Left, Image Right) -->
+    <section
+      class="relative w-[90%] max-w-[90%] mx-auto px-4 md:px-8 py-24 overflow-hidden"
+    >
+      <div class="bg-shape-1"></div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10"
+      >
+        <!-- Text Left -->
+        <div class="order-2 md:order-1" data-aos="fade-right">
+          <span
+            class="text-accent text-xs font-bold uppercase tracking-widest mb-4 block"
+            >What We Do</span
+          >
+          <h2
+            class="text-4xl md:text-5xl font-bold text-primary-dark mb-6 leading-tight"
+          >
+            Comprehensive design<br />& execution
+          </h2>
+          <div class="text-slate-500 mb-8 space-y-6 text-base leading-relaxed">
+            <p>
+              Our firm provides a holistic, turnkey solution for high-end
+              residential and commercial projects. We guide our clients through
+              a seamless journey from the initial blank canvas to the final
+              placement of curated artwork.
+            </p>
+          </div>
+
+          <div class="space-y-6 mb-10">
+            <div class="flex items-start">
+              <svg
+                class="w-6 h-6 check-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <div>
+                <h4 class="text-lg font-bold text-primary-dark">
+                  Doors and Windows
+                </h4>
+                <p class="text-sm text-slate-500">
+                  Premium quality doors and windows enhancing aesthetics and
+                  security.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <svg
+                class="w-6 h-6 check-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <div>
+                <h4 class="text-lg font-bold text-primary-dark">
+                  Sliding & Folding Doors
+                </h4>
+                <p class="text-sm text-slate-500">
+                  Seamless indoor-outdoor transitions with our advanced sliding
+                  systems.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <svg
+                class="w-6 h-6 check-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <div>
+                <h4 class="text-lg font-bold text-primary-dark">
+                  Curtain Walls & Skylights
+                </h4>
+                <p class="text-sm text-slate-500">
+                  Modern facade solutions and skylights for maximum natural
+                  illumination.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <svg
+                class="w-6 h-6 check-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <div>
+                <h4 class="text-lg font-bold text-primary-dark">
+                  Substation Louvers
+                </h4>
+                <p class="text-sm text-slate-500">
+                  Durable architectural louvers for optimal ventilation and
+                  aesthetic integration.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="services.html"
+            class="btn-outline px-8 py-3 rounded-full text-sm font-semibold text-primary-dark"
+            >View All Services</a
+          >
+        </div>
+
+        <!-- Image Right -->
+        <div class="order-1 md:order-2 relative h-[600px]" data-aos="fade-left">
+          <div
+            class="absolute top-0 right-0 w-4/5 h-[80%] rounded-2xl overflow-hidden group shadow-xl"
+          >
+            <div
+              class="w-full h-full bg-cover bg-center img-hover-zoom"
+              style="
+                background-image: url('https://plus.unsplash.com/premium_photo-1676657954811-9409c4830467?q=80&w=687&auto=format&fit=crop');
+              "
+            ></div>
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-3/5 h-[60%] rounded-2xl overflow-hidden group border-8 border-white shadow-2xl"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="w-full h-full bg-cover bg-center img-hover-zoom"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1721902024148-287438cf3e05?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 11. Parallax CTA Banner -->
+    <section class="relative w-full min-h-[500px] md:min-h-[600px] flex items-center justify-center bg-fixed bg-cover bg-center mt-10" style="background-image: url('https://images.unsplash.com/photo-1696846912973-3233cc80bf86?q=80&w=1170&auto=format&fit=crop');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-black/30"></div>
+        
+        <div class="relative z-10 w-[90%] max-w-5xl mx-auto px-4 md:px-8 text-center flex flex-col items-center justify-center gap-10" data-aos="fade-up">
+            <!-- Text Content -->
+            <div class="max-w-4xl">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
+                    Create Beautiful <span class="font-serif italic text-[#D9873E]">Memories</span> Full Of Tranquility, Book Your Villa Now
+                </h2>
+            </div>
+            
+            <!-- Standard Pill Button -->
+            <a href="contact.html" class="inline-block bg-[#FDBA74] text-primary-dark rounded-full px-12 py-4 text-base font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_10px_40px_rgba(255,255,255,0.2)] transform hover:-translate-y-1">
+                Book Your Villa Now
+            </a>
+        </div>
+    </section>
+
+
+
+
+    <!-- ZIG 3: Why Choose Us (Image Left, Text Right) - Grey Background -->
+    <section class="bg-[#F8F9FA] py-24 overflow-hidden">
+      <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <!-- Image Left -->
+          <div
+            class="h-[700px] rounded-2xl overflow-hidden group shadow-2xl"
+            data-aos="fade-right"
+          >
+            <div
+              class="w-full h-full bg-cover bg-center img-hover-zoom"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1696846912973-3233cc80bf86?q=80&w=1170&auto=format&fit=crop');
+              "
+            ></div>
+          </div>
+
+          <!-- Text Right -->
+          <div data-aos="fade-left">
+            <span
+              class="text-accent text-xs font-bold uppercase tracking-widest mb-4 block"
+              >Why Choose Us</span
+            >
+            <h2
+              class="text-4xl md:text-5xl font-bold text-primary-dark mb-6 leading-tight"
+            >
+              Uncompromising<br />standards of excellence
+            </h2>
+            <p class="text-slate-500 mb-10 text-base leading-relaxed">
+              When you partner with us, you are not just hiring a contractor;
+              you are collaborating with a team of visionary architects and
+              meticulous project managers dedicated to perfection.
+            </p>
+
+            <div class="space-y-6 mb-12">
+              <!-- Card 1 -->
+              <div
+                class="relative bg-white p-8 rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.05)] border border-slate-100 hover:border-accent hover:-translate-y-1 transition-all duration-500 group overflow-hidden cursor-pointer"
+                data-aos="fade-left"
+                data-aos-delay="100"
+              >
+                <div
+                  class="absolute -right-4 -bottom-6 text-[120px] font-black text-slate-50 opacity-80 group-hover:text-accent group-hover:opacity-5 transition-all duration-500 pointer-events-none leading-none"
+                >
+                  01
+                </div>
+                <div
+                  class="relative z-10 flex flex-col md:flex-row items-start"
+                >
+                  <div
+                    class="w-16 h-16 rounded-full bg-slate-50 flex items-center justify-center mb-6 md:mb-0 md:mr-6 group-hover:bg-accent transition-colors duration-500 shrink-0"
+                  >
+                    <svg
+                      class="w-7 h-7 text-accent group-hover:text-white transition-colors"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4
+                      class="text-xl font-bold text-primary-dark mb-3 group-hover:text-accent transition-colors duration-300"
+                    >
+                      Exclusive Material Access
+                    </h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                      We maintain direct relationships with elite European
+                      quarries and timber mills, ensuring your property features
+                      materials impossible to find locally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="relative bg-white p-8 rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.05)] border border-slate-100 hover:border-accent hover:-translate-y-1 transition-all duration-500 group overflow-hidden cursor-pointer"
+                data-aos="fade-left"
+                data-aos-delay="200"
+              >
+                <div
+                  class="absolute -right-4 -bottom-6 text-[120px] font-black text-slate-50 opacity-80 group-hover:text-accent group-hover:opacity-5 transition-all duration-500 pointer-events-none leading-none"
+                >
+                  02
+                </div>
+                <div
+                  class="relative z-10 flex flex-col md:flex-row items-start"
+                >
+                  <div
+                    class="w-16 h-16 rounded-full bg-slate-50 flex items-center justify-center mb-6 md:mb-0 md:mr-6 group-hover:bg-accent transition-colors duration-500 shrink-0"
+                  >
+                    <svg
+                      class="w-7 h-7 text-accent group-hover:text-white transition-colors"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4
+                      class="text-xl font-bold text-primary-dark mb-3 group-hover:text-accent transition-colors duration-300"
+                    >
+                      Flawless Turnkey Execution
+                    </h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                      Our in-house project management team oversees every
+                      contractor and delivery, guaranteeing adherence to our
+                      strict timeline and quality standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="relative bg-white p-8 rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.05)] border border-slate-100 hover:border-accent hover:-translate-y-1 transition-all duration-500 group overflow-hidden cursor-pointer"
+                data-aos="fade-left"
+                data-aos-delay="300"
+              >
+                <div
+                  class="absolute -right-4 -bottom-6 text-[120px] font-black text-slate-50 opacity-80 group-hover:text-accent group-hover:opacity-5 transition-all duration-500 pointer-events-none leading-none"
+                >
+                  03
+                </div>
+                <div
+                  class="relative z-10 flex flex-col md:flex-row items-start"
+                >
+                  <div
+                    class="w-16 h-16 rounded-full bg-slate-50 flex items-center justify-center mb-6 md:mb-0 md:mr-6 group-hover:bg-accent transition-colors duration-500 shrink-0"
+                  >
+                    <svg
+                      class="w-7 h-7 text-accent group-hover:text-white transition-colors"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4
+                      class="text-xl font-bold text-primary-dark mb-3 group-hover:text-accent transition-colors duration-300"
+                    >
+                      Award-Winning Talent
+                    </h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">
+                      Your project will be spearheaded by senior architects
+                      whose portfolios include some of the most iconic
+                      residences in the Middle East.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="contact.html" class="btn-pill group">
+              Consult With Us
+              <svg
+                class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END ZIG-ZAG EXPANSION -->
+
+    <!-- 4. Steps Section -->
+    <section class="relative py-24 overflow-hidden">
+      <div class="bg-shape-3"></div>
+      <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8 relative z-10">
+        <div class="mb-12" data-aos="fade-up">
+          <h2 class="text-3xl md:text-5xl font-bold text-primary-dark">
+            4 easy steps to get<br />exterior design
+          </h2>
+        </div>
+
+        <div
+          class="swiper stepsSwiper !overflow-visible"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide !h-auto">
+              <div
+                class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-xl transition-shadow duration-300 group cursor-pointer h-full flex flex-col"
+              >
+                <div class="h-72 overflow-hidden rounded-xl mb-8 shrink-0">
+                  <div
+                    class="w-full h-full bg-cover bg-center img-hover-zoom"
+                    style="
+                      background-image: url('https://images.unsplash.com/photo-1656385959898-7496979e7fd5?q=80&w=1170&auto=format&fit=crop');
+                    "
+                  ></div>
+                </div>
+                <div class="flex items-start flex-grow">
+                  <span class="text-accent text-3xl font-light mr-6">01</span>
+                  <div>
+                    <h4
+                      class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors"
+                    >
+                      Book a consultation
+                    </h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                      Meet with our senior designers to discuss your vision,
+                      space requirements, and luxury aspirations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide !h-auto">
+              <div
+                class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-xl transition-shadow duration-300 group cursor-pointer h-full flex flex-col"
+              >
+                <div class="h-72 overflow-hidden rounded-xl mb-8 shrink-0">
+                  <div
+                    class="w-full h-full bg-cover bg-center img-hover-zoom"
+                    style="
+                      background-image: url('https://images.unsplash.com/photo-1542676012084-a4b1f610452a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fit=crop&w=1000&q=80');
+                    "
+                  ></div>
+                </div>
+                <div class="flex items-start flex-grow">
+                  <span class="text-accent text-3xl font-light mr-6">02</span>
+                  <div>
+                    <h4
+                      class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors"
+                    >
+                      Get your 3D design
+                    </h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                      Visualize your transformed space with our hyper-realistic
+                      3D architectural renderings before execution.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide !h-auto">
+              <div
+                class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-xl transition-shadow duration-300 group cursor-pointer h-full flex flex-col"
+              >
+                <div class="h-72 overflow-hidden rounded-xl mb-8 shrink-0">
+                  <div
+                    class="w-full h-full bg-cover bg-center img-hover-zoom"
+                    style="
+                      background-image: url('https://images.unsplash.com/photo-1776784995502-afb418b23d83?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fit=crop&w=1000&q=80');
+                    "
+                  ></div>
+                </div>
+                <div class="flex items-start flex-grow">
+                  <span class="text-accent text-3xl font-light mr-6">03</span>
+                  <div>
+                    <h4
+                      class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors"
+                    >
+                      Procurement & Build
+                    </h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                      Our execution team sources the finest materials and
+                      manages construction with absolute precision.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide !h-auto">
+              <div
+                class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-xl transition-shadow duration-300 group cursor-pointer h-full flex flex-col"
+              >
+                <div class="h-72 overflow-hidden rounded-xl mb-8 shrink-0">
+                  <div
+                    class="w-full h-full bg-cover bg-center img-hover-zoom"
+                    style="
+                      background-image: url('https://images.unsplash.com/photo-1721902024148-287438cf3e05?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                    "
+                  ></div>
+                </div>
+                <div class="flex items-start flex-grow">
+                  <span class="text-accent text-3xl font-light mr-6">04</span>
+                  <div>
+                    <h4
+                      class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors"
+                    >
+                      Final Handover
+                    </h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                      We deliver your completed sanctuary, fully styled and
+                      meticulously cleaned, ready for you to move in.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination !relative !mt-12 !bottom-0"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Portfolio Grid -->
+
+    <section
+      class="relative w-[90%] max-w-[90%] mx-auto px-4 md:px-8 py-20 border-t border-slate-100 overflow-hidden"
+    >
+      <div class="bg-shape-2"></div>
+      <div class="relative z-10">
+        <div class="flex justify-between items-end mb-12" data-aos="fade-up">
+          <div>
+            <span
+              class="text-accent text-xs font-bold uppercase tracking-widest mb-3 block"
+              >Portfolio</span
+            >
+            <h2 class="text-3xl md:text-5xl font-bold text-primary-dark">
+              Explore portfolio latest<br />designs
+            </h2>
+          </div>
+          <a
+            href="gallery.html"
+            class="text-primary-dark font-bold border-b-2 border-primary-dark hover:border-accent hover:text-accent transition-colors pb-1 text-sm uppercase tracking-widest hidden md:block"
+            >View All Projects</a
+          >
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            class="rounded-2xl overflow-hidden group cursor-pointer h-[600px] shadow-lg"
+            data-aos="fade-right"
+          >
+            <div
+              class="w-full h-full bg-cover bg-center img-hover-zoom"
+              style="
+                background-image: url('https://plus.unsplash.com/premium_photo-1676657954811-9409c4830467?q=80&w=687&auto=format&fit=crop');
+              "
+            ></div>
+          </div>
+          <div class="grid grid-rows-2 grid-cols-2 gap-6 h-[600px]">
+            <div
+              class="col-span-2 rounded-2xl overflow-hidden group cursor-pointer shadow-lg"
+              data-aos="fade-down"
+              data-aos-delay="200"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center img-hover-zoom"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1582174847297-a681c87719ad?q=80&w=1149&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                "
+              ></div>
+            </div>
+            <div
+              class="col-span-1 rounded-2xl overflow-hidden group cursor-pointer shadow-lg"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center img-hover-zoom"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1656385959898-7496979e7fd5?q=80&w=1170&auto=format&fit=crop');
+                "
+              ></div>
+            </div>
+            <div
+              class="col-span-1 rounded-2xl overflow-hidden group cursor-pointer shadow-lg"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center img-hover-zoom"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1696846912973-3233cc80bf86?q=80&w=1170&auto=format&fit=crop');
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="w-full bg-[#0F172A] py-24 overflow-hidden relative">
+      <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span class="text-white text-sm font-semibold mb-4 block"
+            >Testimonials</span
+          >
+          <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+            What Guests
+            <span class="text-[#D9873E] italic font-serif font-light"
+              >Saying?</span
+            >
+          </h2>
+        </div>
+
+        <!-- Swiper Slider -->
+        <div
+          class="swiper testimonialsSwiper !overflow-visible"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#1E293B] p-8 h-full">
+                <div class="flex items-center mb-6">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    alt="Dale Mendoza"
+                    class="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 class="text-white font-bold text-lg leading-tight">
+                      Dale Mendoza
+                    </h4>
+                    <span class="text-[#D9873E] text-xs">Our Customer</span>
+                  </div>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  "Our family vacation at this villa exceeded all our
+                  expectations. The spacious rooms and well-equipped kitchen
+                  made us feel right at home. The kids loved the dedicated play
+                  area and the beach access, while we enjoyed the spa services."
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#1E293B] p-8 h-full">
+                <div class="flex items-center mb-6">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Alice Maxwell"
+                    class="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 class="text-white font-bold text-lg leading-tight">
+                      Alice Maxwell
+                    </h4>
+                    <span class="text-[#D9873E] text-xs">Our Customer</span>
+                  </div>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  "My partner and I chose this villa for our honeymoon, and it
+                  was absolutely perfect. The private terrace with a hot tub and
+                  the stunning views of the sunset made for unforgettable
+                  evenings. The attention to detail in the villa's decor."
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#1E293B] p-8 h-full">
+                <div class="flex items-center mb-6">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/46.jpg"
+                    alt="Archer Corbyn"
+                    class="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 class="text-white font-bold text-lg leading-tight">
+                      Archer Corbyn
+                    </h4>
+                    <span class="text-[#D9873E] text-xs">Our Customer</span>
+                  </div>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  "This villa provided a luxurious yet welcoming atmosphere that
+                  made our vacation truly special. The gourmet kitchen allowed
+                  us to enjoy some home-cooked meals, while the on-site
+                  restaurant served delicious local cuisine."
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#1E293B] p-8 h-full">
+                <div class="flex items-center mb-6">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/65.jpg"
+                    alt="Chelsea West"
+                    class="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 class="text-white font-bold text-lg leading-tight">
+                      Chelsea West
+                    </h4>
+                    <span class="text-[#D9873E] text-xs">Our Customer</span>
+                  </div>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  "The service at this villa was exceptional from start to
+                  finish. Every request was met with a smile and prompt action.
+                  The villa itself was beautifully designed with modern
+                  amenities and stunning views from every window."
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#1E293B] p-8 h-full">
+                <div class="flex items-center mb-6">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    alt="Dale Mendoza"
+                    class="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 class="text-white font-bold text-lg leading-tight">
+                      Dale Mendoza
+                    </h4>
+                    <span class="text-[#D9873E] text-xs">Our Customer</span>
+                  </div>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  "Our family vacation at this villa exceeded all our
+                  expectations. The spacious rooms and well-equipped kitchen
+                  made us feel right at home. The kids loved the dedicated play
+                  area and the beach access, while we enjoyed the spa services."
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#1E293B] p-8 h-full">
+                <div class="flex items-center mb-6">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Alice Maxwell"
+                    class="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 class="text-white font-bold text-lg leading-tight">
+                      Alice Maxwell
+                    </h4>
+                    <span class="text-[#D9873E] text-xs">Our Customer</span>
+                  </div>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  "My partner and I chose this villa for our honeymoon, and it
+                  was absolutely perfect. The private terrace with a hot tub and
+                  the stunning views of the sunset made for unforgettable
+                  evenings. The attention to detail in the villa's decor."
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#1E293B] p-8 h-full">
+                <div class="flex items-center mb-6">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/46.jpg"
+                    alt="Archer Corbyn"
+                    class="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 class="text-white font-bold text-lg leading-tight">
+                      Archer Corbyn
+                    </h4>
+                    <span class="text-[#D9873E] text-xs">Our Customer</span>
+                  </div>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  "This villa provided a luxurious yet welcoming atmosphere that
+                  made our vacation truly special. The gourmet kitchen allowed
+                  us to enjoy some home-cooked meals, while the on-site
+                  restaurant served delicious local cuisine."
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="swiper-slide h-auto">
+              <div class="bg-[#1E293B] p-8 h-full">
+                <div class="flex items-center mb-6">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/65.jpg"
+                    alt="Chelsea West"
+                    class="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 class="text-white font-bold text-lg leading-tight">
+                      Chelsea West
+                    </h4>
+                    <span class="text-[#D9873E] text-xs">Our Customer</span>
+                  </div>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  "The service at this villa was exceptional from start to
+                  finish. Every request was met with a smile and prompt action.
+                  The villa itself was beautifully designed with modern
+                  amenities and stunning views from every window."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div
+          class="flex justify-center mt-12 gap-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div
+            class="testi-prev w-10 h-10 rounded-full bg-[#D9873E] flex items-center justify-center cursor-pointer text-slate-900 hover:bg-black hover:text-white transition-colors duration-300"
+          >
+            <i class="fas fa-chevron-left text-sm"></i>
+          </div>
+          <div
+            class="testi-next w-10 h-10 rounded-full bg-[#D9873E] flex items-center justify-center cursor-pointer text-slate-900 hover:bg-black hover:text-white transition-colors duration-300"
+          >
+            <i class="fas fa-chevron-right text-sm"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog & News Section -->
+    <section class="w-full bg-white py-24">
+      <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-12"
+          data-aos="fade-up"
+        >
+          <div>
+            <span class="text-slate-800 text-sm font-semibold mb-2 block"
+              >Blog & News</span
+            >
+            <h2 class="text-4xl md:text-5xl font-bold text-primary-dark">
+              Our Latest
+              <span class="italic font-serif font-light">Blog</span> & News
+            </h2>
+          </div>
+          <a
+            href="blog.html"
+            class="mt-6 md:mt-0 inline-block bg-[#FDBA74] text-primary-dark rounded-full px-8 py-3 font-semibold hover:bg-black hover:text-white transition-colors duration-300"
+            >View All</a
+          >
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <!-- Blog Post 1 -->
+          <a
+            href="blog.html"
+            class="group relative h-[450px] md:h-[550px] overflow-hidden block rounded-none shadow-sm hover:shadow-xl transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+              style="
+                background-image: url('https://media.istockphoto.com/id/2227010613/photo/modern-mediterranean-apartment-towers-in-antalya-turkey.webp?a=1&b=1&s=612x612&w=0&k=20&c=29-x6C_2eZlgKmYVOVkYXJA1zA99p9TIlxPPLoTQiEQ=');
+              "
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 text-white z-10">
+              <h3
+                class="text-2xl font-bold mb-4 leading-tight group-hover:text-[#FDBA74] transition-colors"
+              >
+                10 Ways Exterior Designs Can Make Your Home Enjoyable
+              </h3>
+              <div class="flex items-center text-sm text-slate-300">
+                <i class="far fa-clock mr-2 text-[#FDBA74]"></i> June 13, 2026
+              </div>
+            </div>
+          </a>
+
+          <!-- Blog Post 2 -->
+          <a
+            href="blog.html"
+            class="group relative h-[450px] md:h-[550px] overflow-hidden block rounded-none shadow-sm hover:shadow-xl transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1656385959898-7496979e7fd5?q=80&w=1170&auto=format&fit=crop');
+              "
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 text-white z-10">
+              <h3
+                class="text-2xl font-bold mb-4 leading-tight group-hover:text-[#FDBA74] transition-colors"
+              >
+                Top 8 Architectural Styles & Spaces You Must Explore In 2026
+              </h3>
+              <div class="flex items-center text-sm text-slate-300">
+                <i class="far fa-clock mr-2 text-[#FDBA74]"></i> June 13, 2026
+              </div>
+            </div>
+          </a>
+
+          <!-- Blog Post 3 -->
+          <a
+            href="blog.html"
+            class="group relative h-[450px] md:h-[550px] overflow-hidden block rounded-none shadow-sm hover:shadow-xl transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+              style="
+                background-image: url('https://plus.unsplash.com/premium_photo-1676657954811-9409c4830467?q=80&w=687&auto=format&fit=crop');
+              "
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 left-0 w-full p-8 text-white z-10">
+              <h3
+                class="text-2xl font-bold mb-4 leading-tight group-hover:text-[#FDBA74] transition-colors"
+              >
+                Plan Your Spaces And Rooms To Allocate Time For Family
+              </h3>
+              <div class="flex items-center text-sm text-slate-300">
+                <i class="far fa-clock mr-2 text-[#FDBA74]"></i> June 8, 2026
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    
+
+
+    <!-- 14. Premium Dark Footer -->
+    <!-- Main Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div class="col-span-1 md:col-span-1">
+            <h2 class="text-2xl font-bold text-white mb-6">
+              Exterior<span class="text-accent">Exterior</span>
+            </h2>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Premium exterior and exterior design solutions. We bring your
+              vision to life with precision, elegance, and uncompromised
+              quality.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-white font-bold mb-6 text-lg">Quick Links</h3>
+            <ul class="space-y-3 text-sm">
+              <li>
+                <a href="index.html" class="hover:text-accent transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="hover:text-accent transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="hover:text-accent transition-colors"
+                  >Our Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  class="hover:text-accent transition-colors"
+                  >Portfolios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="hover:text-accent transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-white font-bold mb-6 text-lg">Our Services</h3>
+            <ul class="space-y-3 text-sm">
+              <li>
+                <a
+                  href="doors-and-windows.html"
+                  class="hover:text-accent transition-colors"
+                  >Doors & Windows</a
+                >
+              </li>
+              <li>
+                <a
+                  href="sliding-folding-doors.html"
+                  class="hover:text-accent transition-colors"
+                  >Sliding Folding Doors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="sliding-doors.html"
+                  class="hover:text-accent transition-colors"
+                  >Sliding Doors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="curtain-walls.html"
+                  class="hover:text-accent transition-colors"
+                  >Curtain Walls</a
+                >
+              </li>
+              <li>
+                <a
+                  href="skylight.html"
+                  class="hover:text-accent transition-colors"
+                  >Skylights</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-white font-bold mb-6 text-lg">Contact Info</h3>
+            <ul class="space-y-4 text-sm">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3 text-accent"></i>
+                <span
+                  >123 Design Boulevard,<br />Creative District, NY 10012</span
+                >
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-phone-alt mr-3 text-accent"></i>
+                <span>+1 (555) 123-4567</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-envelope mr-3 text-accent"></i>
+                <span>info@exteriorexterior.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500"
+        >
+          <p>&copy; 2026 ExteriorExterior. All rights reserved.</p>
+          <div class="space-x-4 mt-4 md:mt-0">
+            <a href="#" class="hover:text-white transition-colors"
+              >Privacy Policy</a
+            >
+            <a href="#" class="hover:text-white transition-colors"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- AOS & Swiper Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+        easing: "ease-out-cubic",
+      });
+
+      var swiper = new Swiper(".stepsSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+          },
+        },
+      });
+
+      var heroSwiper = new Swiper(".heroSwiper", {
+        loop: true,
+        speed: 800,
+        grabCursor: true,
+        effect: "fade", // Needs fade effect for premium look
+        speed: 1000,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".heroSwiper .swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".heroSwiper .swiper-button-next",
+          prevEl: ".heroSwiper .swiper-button-prev",
+        },
+      });
+
+      var servicesSwiper = new Swiper(".servicesSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        freeMode: true,
+        mousewheel: {
+          forceToAxis: true,
+        },
+        grabCursor: true,
+        scrollbar: {
+          el: ".servicesSwiper .swiper-scrollbar",
+          hide: false,
+          draggable: true,
+        },
+        breakpoints: {
+          640: { slidesPerView: 2, spaceBetween: 24 },
+          1024: { slidesPerView: 3, spaceBetween: 32 },
+        },
+      });
+
+      var testimonialsSwiper = new Swiper(".testimonialsSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".testi-next",
+          prevEl: ".testi-prev",
+        },
+        breakpoints: {
+          768: { slidesPerView: 2, spaceBetween: 24 },
+          1024: { slidesPerView: 3, spaceBetween: 32 },
+          1280: { slidesPerView: 4, spaceBetween: 32 },
+        },
+      });
+    </script>
+  </body>
+</html>

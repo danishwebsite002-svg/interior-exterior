@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Luxury Interior Design Dubai</title>
+    <meta name="description" content="Get in touch with our expert interior designers in Dubai.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Outfit", sans-serif;
+      }
+      .font-serif {
+        font-family: "Playfair Display", serif !important;
+      }
+      h1 span, h2 span, h3 span {
+        color: #D9873E;
+      }
+
+      body { font-family: 'Inter', sans-serif; overflow-x: hidden; color: #1e293b; background-color: #F8F9FA; }
+        .text-accent { color: #D9873E; } .bg-accent { background-color: #D9873E; }
+        .text-white { color: #2E3133; } .bg-primary-dark { background-color: #2E3133; }
+        
+        .btn-outline { border: 1px solid #e2e8f0; transition: all 0.4s ease; display: inline-flex; align-items: center; }
+        .btn-outline:hover { border-color: #D9873E; color: #D9873E; background-color: rgba(217, 135, 62, 0.05); transform: translateY(-2px); }
+        
+        .btn-pill {
+            background-color: #2E3133; color: white; border-radius: 999px; padding: 1rem 3rem;
+            display: inline-flex; align-items: center; font-size: 0.875rem; font-weight: 600;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .btn-pill:hover { background-color: #1a1c1d; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); transform: translateY(-2px); }
+        
+        /* Clean Form Inputs */
+        .clean-input {
+            width: 100%; border: none; border-bottom: 2px solid #e2e8f0; padding: 1rem 0;
+            background: transparent; outline: none; font-size: 1rem; color: #2E3133; transition: all 0.3s;
+        }
+        .clean-input:focus { border-bottom-color: #D9873E; }
+        .clean-input::placeholder { color: #94a3b8; font-weight: 300; }
+        
+        .email-input { border: none; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; outline: none; background: transparent; transition: border-color 0.3s; }
+        .email-input:focus { border-bottom-color: #D9873E; }
+        /* Background Shapes */
+        .bg-shape-1 {
+            position: absolute;
+            top: -10%;
+            right: -5%;
+            width: 400px;
+            height: 400px;
+            background-color: #D9873E;
+            opacity: 0.05;
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            z-index: 0;
+            animation: morph 8s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .bg-shape-2 {
+            position: absolute;
+            bottom: 10%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background-color: #2E3133;
+            opacity: 0.03;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            z-index: 0;
+            animation: morph 12s ease-in-out infinite reverse;
+            pointer-events: none;
+        }
+
+        .bg-shape-3 {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background-image: radial-gradient(#D9873E 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.15;
+            z-index: 0;
+            border-radius: 50%;
+            mask-image: radial-gradient(circle, black 40%, transparent 70%);
+            -webkit-mask-image: radial-gradient(circle, black 40%, transparent 70%);
+            pointer-events: none;
+        }
+
+        @keyframes morph {
+            0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+            34% { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
+            67% { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; }
+        }
+
+        /* Off colors */
+        .bg-off-warm { background-color: #FCFAF8; }
+        .bg-off-cool { background-color: #F8F9FA; }
+          .font-signature {
+        font-family: "Caveat", cursive;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#F8F9FA]">
+
+    <!-- Navbar -->
+    <header class="w-full border-b border-slate-200 bg-[#F8F9FA]/90 backdrop-blur-md sticky top-0 z-50 transition-all duration-300">
+        <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8 py-5 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-6 h-6 rounded-full border-2 border-accent flex items-center justify-center">
+                    <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                </div>
+                <a href="index.html" class="text-xl font-bold tracking-tight text-primary-dark uppercase">Interior</a>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="index.html" class="hover:text-accent transition-colors">Home</a>
+                <a href="services.html" class="hover:text-accent transition-colors">Services</a>
+                <a href="gallery.html" class="hover:text-accent transition-colors">Portfolios</a>
+                <a href="blog.html" class="hover:text-accent transition-colors">Blog</a>
+                <a href="contact.html" class="text-accent">Contact</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="contact.html" class="btn-outline px-6 py-2.5 rounded-full text-sm font-semibold text-slate-700">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Inner Page Banner -->
+        <section class="relative w-full h-[50vh] md:h-[60vh] bg-fixed flex flex-col items-center justify-center mt-0 overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=80');"></div>
+            <div class="absolute inset-0 bg-slate-900/75 mix-blend-multiply"></div>
+            <div class="relative z-10 text-center px-4" data-aos="fade-up">
+                <span class="text-accent text-sm font-bold uppercase tracking-widest mb-4 block">Connect</span>
+                <h1 class="text-6xl md:text-5xl lg:text-5xl font-bold text-white mb-6 tracking-tight capitalize">Contact Us</h1>
+                <div class="flex items-center justify-center space-x-3 text-slate-300 text-sm font-medium tracking-widest uppercase">
+                    <a href="index.html" class="hover:text-accent transition-colors">Home</a>
+                    <span class="text-slate-400">/</span>
+                    <span class="text-accent">Contact</span>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Contact Information Cards (Overlapping Hero) -->
+        <section class="relative z-20 w-[90%] max-w-6xl mx-auto px-4 md:px-8 -mt-24 mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Address Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-100 flex flex-col items-center text-center group hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-16 h-16 rounded-full bg-slate-50 flex items-center justify-center text-[#D9873E] text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#D9873E] group-hover:text-white transition-all duration-300">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-dark mb-3">Dubai Studio</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm">Boulevard Plaza Tower 1<br>Downtown Dubai, UAE<br>P.O. Box 123456</p>
+                </div>
+                
+                <!-- Contact Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-100 flex flex-col items-center text-center group hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-16 h-16 rounded-full bg-slate-50 flex items-center justify-center text-[#D9873E] text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#D9873E] group-hover:text-white transition-all duration-300">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-dark mb-3">Direct Contact</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm mb-2"><a href="tel:+97141234567" class="hover:text-[#D9873E] transition-colors">+971 4 123 4567</a></p>
+                    <p class="text-slate-500 leading-relaxed text-sm"><a href="mailto:studio@int-architects.ae" class="hover:text-[#D9873E] transition-colors">studio@int-architects.ae</a></p>
+                </div>
+
+                <!-- Hours Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-100 flex flex-col items-center text-center group hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-16 h-16 rounded-full bg-slate-50 flex items-center justify-center text-[#D9873E] text-2xl mb-6 group-hover:scale-110 group-hover:bg-[#D9873E] group-hover:text-white transition-all duration-300">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-dark mb-3">Business Hours</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm mb-2">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                    <p class="text-slate-500 leading-relaxed text-sm">Saturday & Sunday: Closed</p>
+                </div>
+            </div>
+        </section>
+
+        
+        
+        <!-- Form and Map Section -->
+        <section class="w-[90%] max-w-7xl mx-auto px-4 md:px-8 py-12 mb-24 relative z-20">
+            <div class="text-center mb-16">
+                <span class="text-[#D9873E] text-sm font-bold uppercase tracking-widest mb-4 block">Let's Discuss Your Project</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-primary-dark mb-4 tracking-tight">Send Us a Message</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-lg">Our senior architects and design consultants aim to respond to all inquiries within 24 hours.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 xl:grid-cols-5 gap-0 overflow-hidden rounded-3xl shadow-2xl shadow-slate-200/50 bg-white border border-slate-100">
+                
+                <!-- Left Side: Form (Takes up 3/5 of grid) -->
+                <div class="p-8 md:p-14 xl:col-span-3 bg-white">
+                    <div class="mb-8 border-b border-slate-100 pb-6">
+                        <h3 class="text-3xl font-bold text-primary-dark mb-2">Inquiry Form</h3>
+                        <p class="text-slate-500">Fill out the details below and we will be in touch shortly.</p>
+                    </div>
+                    
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-primary-dark mb-2">First Name</label>
+                                <input type="text" placeholder="e.g. John" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#D9873E] focus:bg-white focus:ring-1 focus:ring-[#D9873E] transition-all text-primary-dark placeholder-slate-400">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-primary-dark mb-2">Last Name</label>
+                                <input type="text" placeholder="e.g. Doe" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#D9873E] focus:bg-white focus:ring-1 focus:ring-[#D9873E] transition-all text-primary-dark placeholder-slate-400">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-primary-dark mb-2">Email Address</label>
+                                <input type="email" placeholder="john@example.com" class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#D9873E] focus:bg-white focus:ring-1 focus:ring-[#D9873E] transition-all text-primary-dark placeholder-slate-400">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-primary-dark mb-2">Project Type</label>
+                                <select class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#D9873E] focus:bg-white focus:ring-1 focus:ring-[#D9873E] transition-all text-slate-500 cursor-pointer appearance-none">
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="villa">Residential Villa</option>
+                                    <option value="penthouse">Luxury Penthouse</option>
+                                    <option value="commercial">Commercial Space</option>
+                                    <option value="other">Other Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-primary-dark mb-2">Project Details</label>
+                            <textarea rows="5" placeholder="Tell us about your requirements, timeline, and vision..." class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#D9873E] focus:bg-white focus:ring-1 focus:ring-[#D9873E] transition-all text-primary-dark placeholder-slate-400 resize-none"></textarea>
+                        </div>
+                        
+                        <div class="pt-4">
+                            <button type="submit" class="bg-primary-dark hover:bg-[#D9873E] text-white px-12 py-5 rounded-xl font-bold uppercase tracking-wider text-sm transition-all duration-400 w-full shadow-[0_10px_20px_rgba(46,49,51,0.15)] hover:shadow-[0_15px_30px_rgba(217,135,62,0.25)] hover:-translate-y-1 flex items-center justify-center group">
+                                Submit Inquiry 
+                                <span class="ml-3 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                                    <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Right Side: Google Map (Takes up 2/5 of grid) -->
+                <div class="bg-slate-100 xl:col-span-2 relative min-h-[400px] xl:min-h-full">
+                    <!-- Added an absolute overlay shadow to blend the edge between form and map -->
+                    <div class="absolute inset-y-0 left-0 w-4 bg-gradient-to-r from-black/5 to-transparent z-10 hidden xl:block pointer-events-none"></div>
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Downtown+Dubai,+UAE&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; position: absolute; top:0; left:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+        <!-- Main Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <h2 class="text-2xl font-bold text-white mb-6">Exterior<span class="text-accent">Interior</span></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Premium exterior and interior design solutions. We bring your vision to life with precision, elegance, and uncompromised quality.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Quick Links</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition-colors">Our Services</a></li>
+                        <li><a href="gallery.html" class="hover:text-accent transition-colors">Portfolios</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Our Services</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="doors-and-windows.html" class="hover:text-accent transition-colors">Doors & Windows</a></li>
+                        <li><a href="sliding-folding-doors.html" class="hover:text-accent transition-colors">Sliding Folding Doors</a></li>
+                        <li><a href="sliding-doors.html" class="hover:text-accent transition-colors">Sliding Doors</a></li>
+                        <li><a href="curtain-walls.html" class="hover:text-accent transition-colors">Curtain Walls</a></li>
+                        <li><a href="skylight.html" class="hover:text-accent transition-colors">Skylights</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Contact Info</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-accent"></i>
+                            <span>123 Design Boulevard,<br>Creative District, NY 10012</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-accent"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-accent"></i>
+                            <span>info@exteriorinterior.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; 2026 ExteriorInterior. All rights reserved.</p>
+                <div class="space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true, offset: 100, easing: 'ease-out-cubic' });</script>
+</body>
+</html>

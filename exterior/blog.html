@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exterior Blog | Design Insights</title>
+    <meta name="description" content="Read our latest insights on luxury exterior design trends and architecture.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Outfit", sans-serif;
+      }
+      .font-serif {
+        font-family: "Playfair Display", serif !important;
+      }
+      h1 span, h2 span, h3 span {
+        color: #D9873E;
+      }
+
+      body { font-family: 'Inter', sans-serif; overflow-x: hidden; color: #1e293b; }
+        .text-accent { color: #D9873E; } .bg-accent { background-color: #D9873E; }
+        .text-white { color: #2E3133; } .bg-primary-dark { background-color: #2E3133; }
+        
+        .btn-outline { border: 1px solid #e2e8f0; transition: all 0.4s ease; display: inline-flex; align-items: center; }
+        .btn-outline:hover { border-color: #D9873E; color: #D9873E; background-color: rgba(217, 135, 62, 0.05); transform: translateY(-2px); }
+        .email-input { border: none; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; outline: none; background: transparent; transition: border-color 0.3s; }
+        .email-input:focus { border-bottom-color: #D9873E; }
+        .img-hover-zoom { transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .group:hover .img-hover-zoom { transform: scale(1.05); }
+        /* Background Shapes */
+        .bg-shape-1 {
+            position: absolute;
+            top: -10%;
+            right: -5%;
+            width: 400px;
+            height: 400px;
+            background-color: #D9873E;
+            opacity: 0.05;
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            z-index: 0;
+            animation: morph 8s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .bg-shape-2 {
+            position: absolute;
+            bottom: 10%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background-color: #2E3133;
+            opacity: 0.03;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            z-index: 0;
+            animation: morph 12s ease-in-out infinite reverse;
+            pointer-events: none;
+        }
+
+        .bg-shape-3 {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background-image: radial-gradient(#D9873E 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.15;
+            z-index: 0;
+            border-radius: 50%;
+            mask-image: radial-gradient(circle, black 40%, transparent 70%);
+            -webkit-mask-image: radial-gradient(circle, black 40%, transparent 70%);
+            pointer-events: none;
+        }
+
+        @keyframes morph {
+            0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+            34% { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
+            67% { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; }
+        }
+
+        /* Off colors */
+        .bg-off-warm { background-color: #FCFAF8; }
+        .bg-off-cool { background-color: #F8F9FA; }
+          .font-signature {
+        font-family: "Caveat", cursive;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white">
+
+    <!-- Navbar -->
+    <header class="w-full border-b border-slate-100 bg-white/90 backdrop-blur-md sticky top-0 z-50 transition-all duration-300">
+        <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8 py-5 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-6 h-6 rounded-full border-2 border-accent flex items-center justify-center">
+                    <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                </div>
+                <a href="index.html" class="text-xl font-bold tracking-tight text-primary-dark uppercase">Exterior</a>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="index.html" class="hover:text-accent transition-colors">Home</a>
+                <a href="services.html" class="hover:text-accent transition-colors">Services</a>
+                <a href="gallery.html" class="hover:text-accent transition-colors">Portfolios</a>
+                <a href="blog.html" class="text-accent">Blog</a>
+                <a href="contact.html" class="hover:text-accent transition-colors">Contact</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="contact.html" class="btn-outline px-6 py-2.5 rounded-full text-sm font-semibold text-slate-700">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Inner Page Banner -->
+        <section class="relative w-full h-[50vh] md:h-[60vh] bg-fixed flex flex-col items-center justify-center mt-0 overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1527665830090-864a163d49ab?q=80&w=687&auto=format&fit=crop');"></div>
+            <div class="absolute inset-0 bg-slate-900/75 mix-blend-multiply"></div>
+            <div class="relative z-10 text-center px-4" data-aos="fade-up">
+                <span class="text-accent text-sm font-bold uppercase tracking-widest mb-4 block">Editorial</span>
+                <h1 class="text-6xl md:text-5xl lg:text-5xl font-bold text-white mb-6 tracking-tight capitalize">Our Blog</h1>
+                <div class="flex items-center justify-center space-x-3 text-slate-300 text-sm font-medium tracking-widest uppercase">
+                    <a href="index.html" class="hover:text-accent transition-colors">Home</a>
+                    <span class="text-slate-400">/</span>
+                    <span class="text-accent">Blog</span>
+                </div>
+            </div>
+        </section>
+        
+        <div class="max-w-3xl mx-auto text-center px-4 md:px-8 mt-20 mb-12" data-aos="fade-up">
+            <p class="text-slate-500 leading-relaxed text-lg">
+                Insights, trends, and musings on luxury architecture and exterior design from our senior partners.
+            </p>
+        </div>
+
+        <!-- Featured Post -->
+        <section class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8 pb-20">
+            <div class="relative rounded-2xl overflow-hidden group cursor-pointer h-[500px]" data-aos="fade-up" data-aos-delay="100">
+                <div class="absolute inset-0 bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1714894692377-f4cd26401ee8?q=80&w=1170&auto=format&fit=crop');"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-10 md:p-16">
+                    <span class="bg-accent text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4 inline-block">Featured</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight group-hover:text-accent transition-colors">The Future of Minimalist<br>Luxury in 2026</h2>
+                    <p class="text-slate-300 max-w-xl text-lg">Exploring how ultra-clean lines and warm organic materials are replacing heavy classical ornamentation in modern Dubai estates.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clean Grid Blog -->
+        <section class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8 py-10 pb-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                
+                <!-- Post 1 -->
+                <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-64 w-full overflow-hidden rounded-xl mb-6 shadow-sm">
+                        <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1542676012084-a4b1f610452a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fit=crop&w=800&q=80');"></div>
+                    </div>
+                    <div class="flex items-center text-xs text-slate-400 font-bold tracking-widest uppercase mb-3">
+                        <span class="text-accent">Architecture</span>
+                        <span class="mx-2">•</span>
+                        <span>May 12, 2026</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary-dark group-hover:text-accent transition-colors mb-3 leading-tight">Integrating Smart Home Tech Invisibly</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm">How to hide complex automation systems behind beautiful bespoke wood paneling.</p>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-64 w-full overflow-hidden rounded-xl mb-6 shadow-sm">
+                        <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1527665830090-864a163d49ab?q=80&w=687&auto=format&fit=crop');"></div>
+                    </div>
+                    <div class="flex items-center text-xs text-slate-400 font-bold tracking-widest uppercase mb-3">
+                        <span class="text-accent">Materials</span>
+                        <span class="mx-2">•</span>
+                        <span>April 28, 2026</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary-dark group-hover:text-accent transition-colors mb-3 leading-tight">The Return of Dark Natural Stone</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm">Why white marble is stepping aside for rich, dramatic Nero Marquina and Travertine.</p>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-64 w-full overflow-hidden rounded-xl mb-6 shadow-sm">
+                        <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=710&auto=format&fit=crop');"></div>
+                    </div>
+                    <div class="flex items-center text-xs text-slate-400 font-bold tracking-widest uppercase mb-3">
+                        <span class="text-accent">Lighting</span>
+                        <span class="mx-2">•</span>
+                        <span>April 15, 2026</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary-dark group-hover:text-accent transition-colors mb-3 leading-tight">Architectural Lighting as Art</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm">Moving beyond chandeliers to integrated structural glow and dramatic shadows.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Carousel & Newsletter -->
+        <!-- Main Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <h2 class="text-2xl font-bold text-white mb-6">Exterior<span class="text-accent">Exterior</span></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Premium exterior and exterior design solutions. We bring your vision to life with precision, elegance, and uncompromised quality.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Quick Links</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition-colors">Our Services</a></li>
+                        <li><a href="gallery.html" class="hover:text-accent transition-colors">Portfolios</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Our Services</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="doors-and-windows.html" class="hover:text-accent transition-colors">Doors & Windows</a></li>
+                        <li><a href="sliding-folding-doors.html" class="hover:text-accent transition-colors">Sliding Folding Doors</a></li>
+                        <li><a href="sliding-doors.html" class="hover:text-accent transition-colors">Sliding Doors</a></li>
+                        <li><a href="curtain-walls.html" class="hover:text-accent transition-colors">Curtain Walls</a></li>
+                        <li><a href="skylight.html" class="hover:text-accent transition-colors">Skylights</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Contact Info</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-accent"></i>
+                            <span>123 Design Boulevard,<br>Creative District, NY 10012</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-accent"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-accent"></i>
+                            <span>info@exteriorexterior.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; 2026 ExteriorExterior. All rights reserved.</p>
+                <div class="space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true, offset: 100, easing: 'ease-out-cubic' });</script>
+</body>
+</html>

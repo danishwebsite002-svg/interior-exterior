@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exterior Gallery | Luxury Projects Dubai</title>
+    <meta name="description" content="Explore our extensive portfolio of luxury exterior design projects.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Outfit", sans-serif;
+      }
+      .font-serif {
+        font-family: "Playfair Display", serif !important;
+      }
+      h1 span, h2 span, h3 span {
+        color: #D9873E;
+      }
+
+      body { font-family: 'Inter', sans-serif; overflow-x: hidden; color: #1e293b; }
+        
+        /* Custom Colors */
+        .text-accent { color: #D9873E; }
+        .bg-accent { background-color: #D9873E; }
+        .border-accent { border-color: #D9873E; }
+        .text-white { color: #2E3133; }
+        .bg-primary-dark { background-color: #2E3133; }
+        
+        .btn-outline {
+            border: 1px solid #e2e8f0;
+            transition: all 0.4s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+        .btn-outline:hover {
+            border-color: #D9873E; color: #D9873E;
+            background-color: rgba(217, 135, 62, 0.05); transform: translateY(-2px);
+        }
+        
+        .email-input {
+            border: none; border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem; outline: none; background: transparent; transition: border-color 0.3s;
+        }
+        .email-input:focus { border-bottom-color: #D9873E; }
+        
+        .img-hover-zoom { transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .group:hover .img-hover-zoom { transform: scale(1.05); }
+        /* Background Shapes */
+        .bg-shape-1 {
+            position: absolute;
+            top: -10%;
+            right: -5%;
+            width: 400px;
+            height: 400px;
+            background-color: #D9873E;
+            opacity: 0.05;
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            z-index: 0;
+            animation: morph 8s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .bg-shape-2 {
+            position: absolute;
+            bottom: 10%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background-color: #2E3133;
+            opacity: 0.03;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            z-index: 0;
+            animation: morph 12s ease-in-out infinite reverse;
+            pointer-events: none;
+        }
+
+        .bg-shape-3 {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background-image: radial-gradient(#D9873E 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.15;
+            z-index: 0;
+            border-radius: 50%;
+            mask-image: radial-gradient(circle, black 40%, transparent 70%);
+            -webkit-mask-image: radial-gradient(circle, black 40%, transparent 70%);
+            pointer-events: none;
+        }
+
+        @keyframes morph {
+            0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+            34% { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
+            67% { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; }
+        }
+
+        /* Off colors */
+        .bg-off-warm { background-color: #FCFAF8; }
+        .bg-off-cool { background-color: #F8F9FA; }
+          .font-signature {
+        font-family: "Caveat", cursive;
+      }
+    </style>
+
+    <!-- lightGallery CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-zoom.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white">
+
+    <!-- Navbar -->
+    <header class="w-full border-b border-slate-100 bg-white/90 backdrop-blur-md sticky top-0 z-50 transition-all duration-300">
+        <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8 py-5 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-6 h-6 rounded-full border-2 border-accent flex items-center justify-center">
+                    <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                </div>
+                <a href="index.html" class="text-xl font-bold tracking-tight text-primary-dark uppercase">Exterior</a>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="index.html" class="hover:text-accent transition-colors">Home</a>
+                <a href="services.html" class="hover:text-accent transition-colors">Services</a>
+                <a href="gallery.html" class="text-accent">Portfolios</a>
+                <a href="blog.html" class="hover:text-accent transition-colors">Blog</a>
+                <a href="contact.html" class="hover:text-accent transition-colors">Contact</a>
+            </nav>
+            
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="contact.html" class="btn-outline px-6 py-2.5 rounded-full text-sm font-semibold text-slate-700">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Inner Page Banner -->
+        <section class="relative w-full h-[50vh] md:h-[60vh] bg-fixed flex flex-col items-center justify-center mt-0 overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1656385959898-7496979e7fd5?q=80&w=1170&auto=format&fit=crop');"></div>
+            <div class="absolute inset-0 bg-slate-900/75 mix-blend-multiply"></div>
+            <div class="relative z-10 text-center px-4" data-aos="fade-up">
+                <span class="text-accent text-sm font-bold uppercase tracking-widest mb-4 block">Portfolio</span>
+                <h1 class="text-6xl md:text-5xl lg:text-5xl font-bold text-white mb-6 tracking-tight capitalize">Our Projects</h1>
+                <div class="flex items-center justify-center space-x-3 text-slate-300 text-sm font-medium tracking-widest uppercase">
+                    <a href="index.html" class="hover:text-accent transition-colors">Home</a>
+                    <span class="text-slate-400">/</span>
+                    <span class="text-accent">Portfolio</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filters -->
+        <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8 mt-16 mb-4 flex flex-wrap justify-center gap-4" id="portfolio-filters" data-aos="fade-up" data-aos-delay="200">
+            <button data-filter="all" class="filter-btn px-6 py-2 bg-primary-dark text-white rounded-full text-sm font-bold transition-all shadow-md hover:shadow-lg hover:-translate-y-1">All Works</button>
+            <button data-filter="doors-windows" class="filter-btn px-6 py-2 bg-white text-slate-600 border border-slate-200 hover:border-primary-dark hover:text-white rounded-full text-sm font-bold transition-all hover:-translate-y-1">Doors & Windows</button>
+            <button data-filter="sliding-folding" class="filter-btn px-6 py-2 bg-white text-slate-600 border border-slate-200 hover:border-primary-dark hover:text-white rounded-full text-sm font-bold transition-all hover:-translate-y-1">Sliding Folding Doors</button>
+            <button data-filter="sliding" class="filter-btn px-6 py-2 bg-white text-slate-600 border border-slate-200 hover:border-primary-dark hover:text-white rounded-full text-sm font-bold transition-all hover:-translate-y-1">Sliding Doors</button>
+            <button data-filter="curtain-walls" class="filter-btn px-6 py-2 bg-white text-slate-600 border border-slate-200 hover:border-primary-dark hover:text-white rounded-full text-sm font-bold transition-all hover:-translate-y-1">Curtain Walls</button>
+            <button data-filter="skylight" class="filter-btn px-6 py-2 bg-white text-slate-600 border border-slate-200 hover:border-primary-dark hover:text-white rounded-full text-sm font-bold transition-all hover:-translate-y-1">Skylight</button>
+            <button data-filter="louvers" class="filter-btn px-6 py-2 bg-white text-slate-600 border border-slate-200 hover:border-primary-dark hover:text-white rounded-full text-sm font-bold transition-all hover:-translate-y-1">Substation Louvers</button>
+        </div>
+
+        <!-- Clean Grid Gallery -->
+        <section class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8 py-10 pb-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                
+                <!-- Project 1: Doors -->
+                <a href="https://images.unsplash.com/photo-1768226911839-6358bf44eee5?q=80&w=687&auto=format&fit=crop" data-src="https://images.unsplash.com/photo-1768226911839-6358bf44eee5?q=80&w=687&auto=format&fit=crop" data-thumb="https://images.unsplash.com/photo-1768226911839-6358bf44eee5?q=80&w=687&auto=format&fit=crop" class="portfolio-item group cursor-pointer transition-all duration-300 block" data-category="doors-windows" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1768226911839-6358bf44eee5?q=80&w=687&auto=format&fit=crop" style="display:none;" alt="thumbnail" />
+                    <div class="h-80 w-full overflow-hidden rounded-xl mb-6 shadow-sm">
+                        <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1768226911839-6358bf44eee5?q=80&w=687&auto=format&fit=crop');"></div>
+                    </div>
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Doors and Windows</span>
+                    <h3 class="text-2xl font-bold text-primary-dark group-hover:text-accent transition-colors">Palm Jumeirah Custom</h3>
+                </a>
+
+                <!-- Project 2: Sliding Folding -->
+                <a href="https://plus.unsplash.com/premium_photo-1661962732747-18c93b05292a?q=80&w=1160&auto=format&fit=crop" data-src="https://plus.unsplash.com/premium_photo-1661962732747-18c93b05292a?q=80&w=1160&auto=format&fit=crop" data-thumb="https://plus.unsplash.com/premium_photo-1661962732747-18c93b05292a?q=80&w=1160&auto=format&fit=crop" class="portfolio-item group cursor-pointer transition-all duration-300 block" data-category="sliding-folding" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://plus.unsplash.com/premium_photo-1661962732747-18c93b05292a?q=80&w=1160&auto=format&fit=crop" style="display:none;" alt="thumbnail" />
+                    <div class="h-80 w-full overflow-hidden rounded-xl mb-6 shadow-sm">
+                        <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://plus.unsplash.com/premium_photo-1661962732747-18c93b05292a?q=80&w=1160&auto=format&fit=crop');"></div>
+                    </div>
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Sliding Folding Doors</span>
+                    <h3 class="text-2xl font-bold text-primary-dark group-hover:text-accent transition-colors">Downtown Sky Villa</h3>
+                </a>
+
+                <!-- Project 3: Sliding -->
+                <a href="https://images.unsplash.com/photo-1721902024148-287438cf3e05?q=80&w=1170&auto=format&fit=crop" data-src="https://images.unsplash.com/photo-1721902024148-287438cf3e05?q=80&w=1170&auto=format&fit=crop" data-thumb="https://images.unsplash.com/photo-1721902024148-287438cf3e05?q=80&w=1170&auto=format&fit=crop" class="portfolio-item group cursor-pointer transition-all duration-300 block" data-category="sliding" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1721902024148-287438cf3e05?q=80&w=1170&auto=format&fit=crop" style="display:none;" alt="thumbnail" />
+                    <div class="h-80 w-full overflow-hidden rounded-xl mb-6 shadow-sm">
+                        <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1721902024148-287438cf3e05?q=80&w=1170&auto=format&fit=crop');"></div>
+                    </div>
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Sliding Doors</span>
+                    <h3 class="text-2xl font-bold text-primary-dark group-hover:text-accent transition-colors">DIFC Executive Office</h3>
+                </a>
+
+                <!-- Project 4: Curtain Walls -->
+                <a href="https://images.unsplash.com/photo-1582174847297-a681c87719ad?q=80&w=1149&auto=format&fit=crop" data-src="https://images.unsplash.com/photo-1582174847297-a681c87719ad?q=80&w=1149&auto=format&fit=crop" data-thumb="https://images.unsplash.com/photo-1582174847297-a681c87719ad?q=80&w=1149&auto=format&fit=crop" class="portfolio-item group cursor-pointer transition-all duration-300 block" data-category="curtain-walls" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1582174847297-a681c87719ad?q=80&w=1149&auto=format&fit=crop" style="display:none;" alt="thumbnail" />
+                    <div class="h-80 w-full overflow-hidden rounded-xl mb-6 shadow-sm">
+                        <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1582174847297-a681c87719ad?q=80&w=1149&auto=format&fit=crop');"></div>
+                    </div>
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Curtain Walls</span>
+                    <h3 class="text-2xl font-bold text-primary-dark group-hover:text-accent transition-colors">Emirates Hills Facade</h3>
+                </a>
+
+                <!-- Project 5: Skylight -->
+                <a href="https://images.unsplash.com/photo-1542676012084-a4b1f610452a?q=80&w=1170&auto=format&fit=crop" data-src="https://images.unsplash.com/photo-1542676012084-a4b1f610452a?q=80&w=1170&auto=format&fit=crop" data-thumb="https://images.unsplash.com/photo-1542676012084-a4b1f610452a?q=80&w=1170&auto=format&fit=crop" class="portfolio-item group cursor-pointer transition-all duration-300 block" data-category="skylight" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1542676012084-a4b1f610452a?q=80&w=1170&auto=format&fit=crop" style="display:none;" alt="thumbnail" />
+                    <div class="h-80 w-full overflow-hidden rounded-xl mb-6 shadow-sm">
+                        <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1542676012084-a4b1f610452a?q=80&w=1170&auto=format&fit=crop');"></div>
+                    </div>
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Skylight</span>
+                    <h3 class="text-2xl font-bold text-primary-dark group-hover:text-accent transition-colors">Boutique Hotel Atrium</h3>
+                </a>
+
+                <!-- Project 6: Louvers -->
+                <a href="https://images.unsplash.com/photo-1714894692377-f4cd26401ee8?q=80&w=1170&auto=format&fit=crop" data-src="https://images.unsplash.com/photo-1714894692377-f4cd26401ee8?q=80&w=1170&auto=format&fit=crop" data-thumb="https://images.unsplash.com/photo-1714894692377-f4cd26401ee8?q=80&w=1170&auto=format&fit=crop" class="portfolio-item group cursor-pointer transition-all duration-300 block" data-category="louvers" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1714894692377-f4cd26401ee8?q=80&w=1170&auto=format&fit=crop" style="display:none;" alt="thumbnail" />
+                    <div class="h-80 w-full overflow-hidden rounded-xl mb-6 shadow-sm">
+                        <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1714894692377-f4cd26401ee8?q=80&w=1170&auto=format&fit=crop');"></div>
+                    </div>
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Substation Louvers</span>
+                    <h3 class="text-2xl font-bold text-primary-dark group-hover:text-accent transition-colors">Industrial Plant DXB</h3>
+                </a>
+
+                <!-- Project 7: Doors -->
+                <a href="https://images.unsplash.com/photo-1768226911839-6358bf44eee5?q=80&w=687&auto=format&fit=crop" data-src="https://images.unsplash.com/photo-1768226911839-6358bf44eee5?q=80&w=687&auto=format&fit=crop" data-thumb="https://images.unsplash.com/photo-1768226911839-6358bf44eee5?q=80&w=687&auto=format&fit=crop" class="portfolio-item group cursor-pointer transition-all duration-300 block" data-category="doors-windows" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1768226911839-6358bf44eee5?q=80&w=687&auto=format&fit=crop" style="display:none;" alt="thumbnail" />
+                    <div class="h-80 w-full overflow-hidden rounded-xl mb-6 shadow-sm">
+                        <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1768226911839-6358bf44eee5?q=80&w=687&auto=format&fit=crop');"></div>
+                    </div>
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Doors and Windows</span>
+                    <h3 class="text-2xl font-bold text-primary-dark group-hover:text-accent transition-colors">Al Barari Estate</h3>
+                </a>
+
+                <!-- Project 8: Sliding Folding -->
+                <a href="https://plus.unsplash.com/premium_photo-1661962732747-18c93b05292a?q=80&w=1160&auto=format&fit=crop" data-src="https://plus.unsplash.com/premium_photo-1661962732747-18c93b05292a?q=80&w=1160&auto=format&fit=crop" data-thumb="https://plus.unsplash.com/premium_photo-1661962732747-18c93b05292a?q=80&w=1160&auto=format&fit=crop" class="portfolio-item group cursor-pointer transition-all duration-300 block" data-category="sliding-folding" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://plus.unsplash.com/premium_photo-1661962732747-18c93b05292a?q=80&w=1160&auto=format&fit=crop" style="display:none;" alt="thumbnail" />
+                    <div class="h-80 w-full overflow-hidden rounded-xl mb-6 shadow-sm">
+                        <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://plus.unsplash.com/premium_photo-1661962732747-18c93b05292a?q=80&w=1160&auto=format&fit=crop');"></div>
+                    </div>
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Sliding Folding Doors</span>
+                    <h3 class="text-2xl font-bold text-primary-dark group-hover:text-accent transition-colors">Jumeirah Golf Estates</h3>
+                </a>
+
+                <!-- Project 9: Curtain Walls -->
+                <a href="https://images.unsplash.com/photo-1582174847297-a681c87719ad?q=80&w=1149&auto=format&fit=crop" data-src="https://images.unsplash.com/photo-1582174847297-a681c87719ad?q=80&w=1149&auto=format&fit=crop" data-thumb="https://images.unsplash.com/photo-1582174847297-a681c87719ad?q=80&w=1149&auto=format&fit=crop" class="portfolio-item group cursor-pointer transition-all duration-300 block" data-category="curtain-walls" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1582174847297-a681c87719ad?q=80&w=1149&auto=format&fit=crop" style="display:none;" alt="thumbnail" />
+                    <div class="h-80 w-full overflow-hidden rounded-xl mb-6 shadow-sm">
+                        <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1582174847297-a681c87719ad?q=80&w=1149&auto=format&fit=crop');"></div>
+                    </div>
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Curtain Walls</span>
+                    <h3 class="text-2xl font-bold text-primary-dark group-hover:text-accent transition-colors">Marina Commercial Tower</h3>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Carousel & Newsletter -->
+        <!-- Main Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <h2 class="text-2xl font-bold text-white mb-6">Exterior<span class="text-accent">Exterior</span></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Premium exterior and exterior design solutions. We bring your vision to life with precision, elegance, and uncompromised quality.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Quick Links</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition-colors">Our Services</a></li>
+                        <li><a href="gallery.html" class="hover:text-accent transition-colors">Portfolios</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Our Services</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="doors-and-windows.html" class="hover:text-accent transition-colors">Doors & Windows</a></li>
+                        <li><a href="sliding-folding-doors.html" class="hover:text-accent transition-colors">Sliding Folding Doors</a></li>
+                        <li><a href="sliding-doors.html" class="hover:text-accent transition-colors">Sliding Doors</a></li>
+                        <li><a href="curtain-walls.html" class="hover:text-accent transition-colors">Curtain Walls</a></li>
+                        <li><a href="skylight.html" class="hover:text-accent transition-colors">Skylights</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Contact Info</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-accent"></i>
+                            <span>123 Design Boulevard,<br>Creative District, NY 10012</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-accent"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-accent"></i>
+                            <span>info@exteriorexterior.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; 2026 ExteriorExterior. All rights reserved.</p>
+                <div class="space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100, easing: 'ease-out-cubic' });
+    </script>
+    <!-- lightGallery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    
+    <!-- Portfolio Filtering Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            const grid = document.getElementById('portfolio-grid');
+
+            let lgInstance = lightGallery(grid, {
+                selector: '.portfolio-item:not([style*="display: none"])',
+                plugins: [lgZoom, lgThumbnail],
+                exThumbImage: 'data-thumb',
+                speed: 500,
+                download: false
+            });
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active button styling
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-primary-dark', 'text-white');
+                        b.classList.add('bg-white', 'text-slate-600');
+                    });
+                    btn.classList.remove('bg-white', 'text-slate-600');
+                    btn.classList.add('bg-primary-dark', 'text-white');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 50);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.95)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                    
+                    // Trigger AOS refresh and LightGallery refresh
+                    setTimeout(() => {
+                        if(typeof AOS !== 'undefined') {
+                            AOS.refresh();
+                        }
+                        if(lgInstance) {
+                            lgInstance.destroy(true);
+                            lgInstance = lightGallery(grid, {
+                                selector: '.portfolio-item:not([style*="display: none"])',
+                                plugins: [lgZoom, lgThumbnail],
+                exThumbImage: 'data-thumb',
+                                speed: 500,
+                                download: false
+                            });
+                        }
+                    }, 400);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

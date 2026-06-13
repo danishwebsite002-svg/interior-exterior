@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exterior Services | Luxury Design Dubai</title>
+    <meta name="description" content="Explore our premium exterior design services including space planning, custom furniture, and turnkey execution.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Outfit", sans-serif;
+      }
+      .font-serif {
+        font-family: "Playfair Display", serif !important;
+      }
+      h1 span, h2 span, h3 span {
+        color: #D9873E;
+      }
+
+      body { font-family: 'Inter', sans-serif; overflow-x: hidden; color: #1e293b; }
+        
+        /* Custom Colors */
+        .text-accent { color: #D9873E; }
+        .bg-accent { background-color: #D9873E; }
+        .border-accent { border-color: #D9873E; }
+        .text-white { color: #2E3133; }
+        .bg-primary-dark { background-color: #2E3133; }
+        
+        /* Premium Buttons */
+        .btn-outline {
+            border: 1px solid #e2e8f0;
+            transition: all 0.4s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-outline:hover {
+            border-color: #D9873E;
+            color: #D9873E;
+            background-color: rgba(217, 135, 62, 0.05);
+            transform: translateY(-2px);
+        }
+        
+        .btn-pill {
+            background-color: #2E3133;
+            color: white;
+            border-radius: 999px;
+            padding: 0.875rem 2.5rem;
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .btn-pill:hover { 
+            background-color: #1a1c1d;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .email-input {
+            border: none;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            outline: none;
+            background: transparent;
+            transition: border-color 0.3s;
+        }
+        .email-input:focus { border-bottom-color: #D9873E; }
+        
+        /* Smooth Image Hover */
+        .img-hover-zoom { transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .group:hover .img-hover-zoom { transform: scale(1.05); }
+        /* Background Shapes */
+        .bg-shape-1 {
+            position: absolute;
+            top: -10%;
+            right: -5%;
+            width: 400px;
+            height: 400px;
+            background-color: #D9873E;
+            opacity: 0.05;
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            z-index: 0;
+            animation: morph 8s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .bg-shape-2 {
+            position: absolute;
+            bottom: 10%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background-color: #2E3133;
+            opacity: 0.03;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            z-index: 0;
+            animation: morph 12s ease-in-out infinite reverse;
+            pointer-events: none;
+        }
+
+        .bg-shape-3 {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background-image: radial-gradient(#D9873E 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.15;
+            z-index: 0;
+            border-radius: 50%;
+            mask-image: radial-gradient(circle, black 40%, transparent 70%);
+            -webkit-mask-image: radial-gradient(circle, black 40%, transparent 70%);
+            pointer-events: none;
+        }
+
+        @keyframes morph {
+            0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+            34% { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
+            67% { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; }
+        }
+
+        /* Off colors */
+        .bg-off-warm { background-color: #FCFAF8; }
+        .bg-off-cool { background-color: #F8F9FA; }
+          .font-signature {
+        font-family: "Caveat", cursive;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white">
+
+    <!-- Navbar -->
+    <header class="w-full border-b border-slate-100 bg-white/90 backdrop-blur-md sticky top-0 z-50 transition-all duration-300">
+        <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8 py-5 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-6 h-6 rounded-full border-2 border-accent flex items-center justify-center">
+                    <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                </div>
+                <a href="index.html" class="text-xl font-bold tracking-tight text-primary-dark uppercase">Exterior</a>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="index.html" class="hover:text-accent transition-colors">Home</a>
+                <a href="services.html" class="hover:text-accent transition-colors">Services</a>
+                <a href="gallery.html" class="hover:text-accent transition-colors">Portfolios</a>
+                <a href="blog.html" class="hover:text-accent transition-colors">Blog</a>
+                <a href="contact.html" class="hover:text-accent transition-colors">Contact</a>
+            </nav>
+            
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="contact.html" class="btn-outline px-6 py-2.5 rounded-full text-sm font-semibold text-slate-700">Contact Us</a>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1170&auto=format&fit=crop');"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+      <div class="relative z-10 text-center px-4 mt-20" data-aos="fade-up">
+        <span class="text-accent font-bold tracking-widest uppercase text-sm mb-4 block">Discover Our Legacy</span>
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">About <span class="font-signature font-normal text-accent normal-case">Us</span></h1>
+        <p class="text-slate-300 max-w-2xl mx-auto text-lg md:text-xl font-light">
+          Architecting atmospheres and crafting bespoke luxury environments.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-24 bg-white relative overflow-hidden">
+      <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div data-aos="fade-right">
+            <span class="text-accent text-xs font-bold uppercase tracking-widest mb-4 block">Our Story</span>
+            <h2 class="text-4xl md:text-5xl font-bold text-primary-dark mb-8 leading-tight">Mastering the Art of Modern Luxury</h2>
+            <div class="space-y-6 text-slate-500 text-lg font-light leading-relaxed">
+              <p>
+                Established as one of the premier exterior architecture firms in the UAE, we specialize in creating bespoke, ultra-luxury environments. From the initial conceptual sketches to the final structural glazing, our approach is defined by an uncompromising commitment to perfection.
+              </p>
+              <p>
+                We do not simply decorate spaces; we architect atmospheres. By blending rigorous spatial planning with the world's finest materials—sourced directly from artisans globally—we craft exteriors that are both deeply intimate and profoundly magnificent. Our signature aesthetic balances bold modernism with timeless elegance, ensuring every project stands as a monumental work of art.
+              </p>
+            </div>
+            <div class="mt-10 flex items-center space-x-6">
+              <div class="w-16 h-[1px] bg-accent"></div>
+              <p class="font-signature text-3xl text-primary-dark">The Founders</p>
+            </div>
+          </div>
+          <div class="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl" data-aos="fade-left">
+            <div class="absolute inset-0 bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1696846912973-3233cc80bf86?q=80&w=1170&auto=format&fit=crop');"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Mission & Vision Section -->
+    <section class="py-24 bg-white">
+      <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          
+          <div class="bg-off-warm p-10 md:p-14 rounded-3xl relative overflow-hidden group" data-aos="fade-right">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-3xl -mr-10 -mt-10 transition-transform group-hover:scale-150 duration-700"></div>
+            <div class="w-16 h-16 bg-white shadow-sm rounded-full flex items-center justify-center text-accent mb-8 relative z-10">
+              <i class="fa-solid fa-bullseye text-2xl"></i>
+            </div>
+            <h3 class="text-3xl font-bold text-primary-dark mb-4 relative z-10">Our Mission</h3>
+            <p class="text-slate-500 font-light leading-relaxed text-lg relative z-10">
+              To redefine the boundaries of architectural design by delivering unparalleled exterior solutions. We aim to merge form and function, crafting sustainable and visually stunning environments that elevate the standard of luxury living worldwide.
+            </p>
+          </div>
+          
+          <div class="bg-off-cool p-10 md:p-14 rounded-3xl relative overflow-hidden group" data-aos="fade-left">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-slate-900/5 rounded-full blur-3xl -mr-10 -mt-10 transition-transform group-hover:scale-150 duration-700"></div>
+            <div class="w-16 h-16 bg-white shadow-sm rounded-full flex items-center justify-center text-primary-dark mb-8 relative z-10">
+              <i class="fa-solid fa-eye text-2xl"></i>
+            </div>
+            <h3 class="text-3xl font-bold text-primary-dark mb-4 relative z-10">Our Vision</h3>
+            <p class="text-slate-500 font-light leading-relaxed text-lg relative z-10">
+              To be the globally recognized pioneer in luxury exterior architecture, inspiring future generations of design through continuous innovation, elite craftsmanship, and an unwavering commitment to the beauty of structural integration.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-24 bg-[#f8f9fa]">
+      <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+          <span class="text-accent text-xs font-bold uppercase tracking-widest mb-4 block">Our Philosophy</span>
+          <h2 class="text-4xl md:text-5xl font-bold text-primary-dark mb-6 tracking-tight">The Pillars of Excellence</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Value 1 -->
+          <div class="bg-white p-10 rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-6 text-accent">
+              <i class="fa-solid fa-gem text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-primary-dark mb-4">Uncompromising Quality</h3>
+            <p class="text-slate-500 font-light leading-relaxed">We source only the rarest and most durable materials, ensuring that our architectural creations withstand the test of time while maintaining their pristine aesthetic.</p>
+          </div>
+          
+          <!-- Value 2 -->
+          <div class="bg-white p-10 rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-6 text-accent">
+              <i class="fa-solid fa-pen-nib text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-primary-dark mb-4">Bespoke Innovation</h3>
+            <p class="text-slate-500 font-light leading-relaxed">No two projects are alike. We engineer custom solutions—from dynamic facades to kinetic louvers—that push the boundaries of modern exterior design.</p>
+          </div>
+          
+          <!-- Value 3 -->
+          <div class="bg-white p-10 rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="300">
+            <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-6 text-accent">
+              <i class="fa-solid fa-hourglass-half text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-primary-dark mb-4">Timeless Elegance</h3>
+            <p class="text-slate-500 font-light leading-relaxed">Our designs transcend fleeting trends. We focus on proportional harmony and classic aesthetics integrated seamlessly with futuristic capabilities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Parallax -->
+    <section class="relative py-32 flex items-center justify-center bg-fixed bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1542676012084-a4b1f610452a?q=80&w=1170&auto=format&fit=crop');">
+      <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm"></div>
+      <div class="relative z-10 w-[90%] max-w-[90%] mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div data-aos="zoom-in" data-aos-delay="100">
+            <h4 class="text-5xl font-bold text-white mb-2"><span class="counter-value" data-target="15">0</span><span class="text-accent">+</span></h4>
+            <p class="text-slate-400 font-medium uppercase tracking-wider text-sm">Years Experience</p>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="200">
+            <h4 class="text-5xl font-bold text-white mb-2"><span class="counter-value" data-target="200">0</span><span class="text-accent">+</span></h4>
+            <p class="text-slate-400 font-medium uppercase tracking-wider text-sm">Projects Delivered</p>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="300">
+            <h4 class="text-5xl font-bold text-white mb-2"><span class="counter-value" data-target="50">0</span><span class="text-accent">+</span></h4>
+            <p class="text-slate-400 font-medium uppercase tracking-wider text-sm">Design Awards</p>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="400">
+            <h4 class="text-5xl font-bold text-white mb-2"><span class="counter-value" data-target="100">0</span><span class="text-accent">%</span></h4>
+            <p class="text-slate-400 font-medium uppercase tracking-wider text-sm">Client Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Call To Action -->
+    <section class="relative py-32 mt-12 bg-cover bg-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1696846912973-3233cc80bf86?q=80&w=1170&auto=format&fit=crop');">
+      <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-[2px]"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+      
+      <div class="relative z-10 w-[90%] max-w-4xl mx-auto px-4 text-center" data-aos="fade-up">
+        <span class="text-accent text-xs font-bold uppercase tracking-widest mb-4 block">Let's Create Together</span>
+        <h2 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">Ready to begin your architectural journey?</h2>
+        <p class="text-slate-300 mb-10 text-lg md:text-xl font-light max-w-2xl mx-auto">Contact us today to schedule a private consultation. Let us transform your vision into an unparalleled masterpiece.</p>
+        
+        <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+          <a href="contact.html" class="btn-orange text-lg px-10 py-4 w-full sm:w-auto shadow-[0_0_20px_rgba(217,135,62,0.4)] hover:shadow-[0_0_30px_rgba(217,135,62,0.6)] rounded-full">
+            Consult With Us
+          </a>
+          <a href="gallery.html" class="btn-outline border-white text-white hover:border-accent hover:text-accent hover:bg-white/5 text-lg px-10 py-4 w-full sm:w-auto rounded-full">
+            View Portfolios
+          </a>
+        </div>
+      </div>
+    </section>
+<footer class="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <h2 class="text-2xl font-bold text-white mb-6">Exterior<span class="text-accent">Exterior</span></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Premium exterior and exterior design solutions. We bring your vision to life with precision, elegance, and uncompromised quality.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Quick Links</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition-colors">Our Services</a></li>
+                        <li><a href="gallery.html" class="hover:text-accent transition-colors">Portfolios</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Our Services</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="doors-and-windows.html" class="hover:text-accent transition-colors">Doors & Windows</a></li>
+                        <li><a href="sliding-folding-doors.html" class="hover:text-accent transition-colors">Sliding Folding Doors</a></li>
+                        <li><a href="sliding-doors.html" class="hover:text-accent transition-colors">Sliding Doors</a></li>
+                        <li><a href="curtain-walls.html" class="hover:text-accent transition-colors">Curtain Walls</a></li>
+                        <li><a href="skylight.html" class="hover:text-accent transition-colors">Skylights</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Contact Info</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-accent"></i>
+                            <span>123 Design Boulevard,<br>Creative District, NY 10012</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-accent"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-accent"></i>
+                            <span>info@exteriorexterior.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; 2026 ExteriorExterior. All rights reserved.</p>
+                <div class="space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100, easing: 'ease-out-cubic' });
+    </script>
+
+    <script>
+      // Counter Animation
+      const counters = document.querySelectorAll('.counter-value');
+      const speed = 100;
+
+      const animateCounters = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const counter = entry.target;
+            const updateCount = () => {
+              const target = +counter.getAttribute('data-target');
+              const count = +counter.innerText;
+              
+              const inc = target / speed;
+
+              if (count < target) {
+                counter.innerText = Math.ceil(count + inc);
+                setTimeout(updateCount, 20);
+              } else {
+                counter.innerText = target;
+              }
+            };
+            updateCount();
+            observer.unobserve(counter);
+          }
+        });
+      };
+
+      const counterObserver = new IntersectionObserver(animateCounters, {
+        threshold: 0.5
+      });
+
+      counters.forEach(counter => {
+        counterObserver.observe(counter);
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergolas | Exterior Architecture</title>
+    <meta name="description" content="Explore our premium Curtain Walls services.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Outfit", sans-serif;
+      }
+      .font-serif {
+        font-family: "Playfair Display", serif !important;
+      }
+      h1 span, h2 span, h3 span {
+        color: #D9873E;
+      }
+
+      body { font-family: 'Inter', sans-serif; overflow-x: hidden; color: #1e293b; }
+        .text-accent { color: #D9873E; }
+        .bg-accent { background-color: #D9873E; }
+        .border-accent { border-color: #D9873E; }
+        .text-white { color: #2E3133; }
+        .bg-primary-dark { background-color: #2E3133; }
+        .btn-outline { border: 1px solid #e2e8f0; transition: all 0.4s ease; display: inline-flex; align-items: center; justify-content: center; }
+        .btn-outline:hover { border-color: #D9873E; color: #D9873E; background-color: rgba(217, 135, 62, 0.05); transform: translateY(-2px); }
+        .btn-pill { background-color: #2E3133; color: white; border-radius: 999px; padding: 0.875rem 2.5rem; display: inline-flex; align-items: center; font-size: 0.875rem; font-weight: 500; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .btn-pill:hover { background-color: #1a1c1d; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); transform: translateY(-2px); }
+        .email-input { border: none; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; outline: none; background: transparent; transition: border-color 0.3s; }
+        .email-input:focus { border-bottom-color: #D9873E; }
+        .img-hover-zoom { transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .group:hover .img-hover-zoom { transform: scale(1.05); }
+        /* Background Shapes */
+        .bg-shape-1 {
+            position: absolute;
+            top: -10%;
+            right: -5%;
+            width: 400px;
+            height: 400px;
+            background-color: #D9873E;
+            opacity: 0.05;
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            z-index: 0;
+            animation: morph 8s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .bg-shape-2 {
+            position: absolute;
+            bottom: 10%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background-color: #2E3133;
+            opacity: 0.03;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            z-index: 0;
+            animation: morph 12s ease-in-out infinite reverse;
+            pointer-events: none;
+        }
+
+        .bg-shape-3 {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background-image: radial-gradient(#D9873E 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.15;
+            z-index: 0;
+            border-radius: 50%;
+            mask-image: radial-gradient(circle, black 40%, transparent 70%);
+            -webkit-mask-image: radial-gradient(circle, black 40%, transparent 70%);
+            pointer-events: none;
+        }
+
+        @keyframes morph {
+            0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+            34% { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
+            67% { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; }
+        }
+
+        /* Off colors */
+        .bg-off-warm { background-color: #FCFAF8; }
+        .bg-off-cool { background-color: #F8F9FA; }
+          .font-signature {
+        font-family: "Caveat", cursive;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white">
+    <header class="w-full border-b border-slate-100 bg-white/90 backdrop-blur-md sticky top-0 z-50 transition-all duration-300">
+        <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8 py-5 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-6 h-6 rounded-full border-2 border-accent flex items-center justify-center">
+                    <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                </div>
+                <a href="index.html" class="text-xl font-bold tracking-tight text-primary-dark uppercase">Exterior</a>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="index.html" class="hover:text-accent transition-colors">Home</a>
+                <a href="services.html" class="hover:text-accent transition-colors">Services</a>
+                <a href="gallery.html" class="hover:text-accent transition-colors">Portfolios</a>
+                <a href="blog.html" class="hover:text-accent transition-colors">Blog</a>
+                <a href="contact.html" class="hover:text-accent transition-colors">Contact</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="contact.html" class="btn-outline px-6 py-2.5 rounded-full text-sm font-semibold text-slate-700">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-fixed relative w-full h-[50vh] md:h-[60vh] flex flex-col items-center justify-center mt-0 overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1696846912973-3233cc80bf86?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+            <div class="absolute inset-0 bg-slate-900/75 mix-blend-multiply"></div>
+            <div class="relative z-10 text-center px-4" data-aos="fade-up">
+                <span class="text-accent text-sm font-bold uppercase tracking-widest mb-4 block">Service Detail</span>
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 uppercase tracking-tight">Pergolas</h1>
+                <div class="flex items-center justify-center space-x-3 text-slate-300 text-sm font-medium tracking-widest uppercase">
+                    <a href="index.html" class="hover:text-accent transition-colors">Home</a>
+                    <span class="text-slate-400">/</span>
+                    <a href="services.html" class="hover:text-accent transition-colors">Services</a>
+                    <span class="text-slate-400">/</span>
+                    <span class="text-accent">Pergolas</span>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <section class="relative w-[90%] max-w-[90%] mx-auto px-4 md:px-8 py-20">
+            <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+                <div class="bg-shape-1"></div>
+                <div class="bg-shape-2"></div>
+            </div>
+            <div class="relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <div class="lg:col-span-8" data-aos="fade-right">
+
+<h2 class="text-4xl md:text-5xl font-bold text-primary-dark mb-10 leading-tight">Elevating Spaces with Premium Pergolas</h2>
+<p class="text-slate-600 mb-6 leading-relaxed text-lg first-letter:text-6xl first-letter:font-serif first-letter:font-bold first-letter:text-accent first-letter:mr-3 first-letter:float-left">Create the ultimate outdoor living experience with our bespoke luxury pergolas. Engineered to expand your usable space, our shaded structures are perfect for outdoor dining, lounging, and entertaining.</p>
+<p class="text-slate-600 mb-12 leading-relaxed text-lg">Featuring optional motorized bioclimatic louvers, integrated LED lighting, and weather sensors, our premium aluminium pergolas allow you to instantly adapt to the sun and rain at the touch of a button.</p>
+
+<hr class="border-slate-100 my-12" />
+
+<h3 class="text-3xl font-bold text-primary-dark mb-8">Key Features & Benefits</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                            <h4 class="text-lg font-bold text-primary-dark mb-2">Unmatched Durability</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">Engineered to withstand harsh environments while maintaining peak performance over time.</p>
+                        </div>
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                            <h4 class="text-lg font-bold text-primary-dark mb-2">Aesthetic Excellence</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">Available in customized finishes that blend seamlessly with your exterior architecture.</p>
+                        </div>
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                            <h4 class="text-lg font-bold text-primary-dark mb-2">Energy Efficiency</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">Advanced insulation to optimize energy consumption and enhance indoor comfort.</p>
+                        </div>
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                            <h4 class="text-lg font-bold text-primary-dark mb-2">Seamless Integration</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">Expertly installed by our seasoned professionals to ensure a perfect fit.</p>
+                        </div>
+                    </div>
+
+<div class="bg-off-cool rounded-3xl p-8 md:p-12 mb-16 border border-slate-100 relative overflow-hidden group">
+        <div class="bg-shape-1 opacity-[0.05]"></div>
+        <div class="relative z-10">
+            
+            <h3 class="text-3xl font-bold text-primary-dark mb-12 text-center">Our Proven Process</h3>
+            
+            <div class="relative max-w-3xl mx-auto">
+                <!-- Vertical Line -->
+                <div class="absolute left-[28px] md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-transparent via-slate-300 to-transparent md:-translate-x-1/2 hidden md:block"></div>
+                <div class="absolute left-[24px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-transparent via-slate-300 to-transparent block md:hidden"></div>
+
+                <div class="space-y-12 relative z-10">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center w-full justify-between group">
+                        <div class="w-full md:w-[45%] md:text-right md:pr-8 mb-4 md:mb-0 pl-16 md:pl-0">
+                            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm group-hover:border-[#D9873E]/50 group-hover:shadow-lg transition-all duration-300 relative">
+                                <span class="text-[#D9873E] text-sm font-bold uppercase tracking-widest mb-1 block">Step 01</span>
+                                <h4 class="font-bold text-primary-dark mb-2 text-lg">Consultation & Survey</h4>
+                                <p class="text-sm text-slate-500 leading-relaxed">Understanding your vision, requirements, and taking precise architectural measurements.</p>
+                            </div>
+                        </div>
+                        <div class="absolute md:relative left-0 md:left-auto w-12 h-12 md:w-[10%] flex justify-center shrink-0">
+                            <div class="w-12 h-12 rounded-full border-4 border-white bg-[#D9873E] text-white flex items-center justify-center shadow-xl relative z-10 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-comments text-lg"></i>
+                            </div>
+                        </div>
+                        <div class="hidden md:block w-[45%]"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center w-full justify-between group">
+                        <div class="hidden md:block w-[45%]"></div>
+                        <div class="absolute md:relative left-0 md:left-auto w-12 h-12 md:w-[10%] flex justify-center shrink-0">
+                            <div class="w-12 h-12 rounded-full border-4 border-white bg-slate-800 text-white flex items-center justify-center shadow-xl relative z-10 group-hover:scale-110 group-hover:bg-[#D9873E] transition-all duration-300">
+                                <i class="fas fa-pencil-ruler text-lg"></i>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-[45%] md:pl-8 mb-4 md:mb-0 pl-16 md:pl-0">
+                            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm group-hover:border-[#D9873E]/50 group-hover:shadow-lg transition-all duration-300">
+                                <span class="text-[#D9873E] text-sm font-bold uppercase tracking-widest mb-1 block">Step 02</span>
+                                <h4 class="font-bold text-primary-dark mb-2 text-lg">Design & Engineering</h4>
+                                <p class="text-sm text-slate-500 leading-relaxed">Crafting detailed CAD drawings and structural calculations tailored to your project.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center w-full justify-between group">
+                        <div class="w-full md:w-[45%] md:text-right md:pr-8 mb-4 md:mb-0 pl-16 md:pl-0">
+                            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm group-hover:border-[#D9873E]/50 group-hover:shadow-lg transition-all duration-300">
+                                <span class="text-[#D9873E] text-sm font-bold uppercase tracking-widest mb-1 block">Step 03</span>
+                                <h4 class="font-bold text-primary-dark mb-2 text-lg">Custom Fabrication</h4>
+                                <p class="text-sm text-slate-500 leading-relaxed">Manufacturing your bespoke systems in our state-of-the-art facility using premium materials.</p>
+                            </div>
+                        </div>
+                        <div class="absolute md:relative left-0 md:left-auto w-12 h-12 md:w-[10%] flex justify-center shrink-0">
+                            <div class="w-12 h-12 rounded-full border-4 border-white bg-slate-800 text-white flex items-center justify-center shadow-xl relative z-10 group-hover:scale-110 group-hover:bg-[#D9873E] transition-all duration-300">
+                                <i class="fas fa-hammer text-lg"></i>
+                            </div>
+                        </div>
+                        <div class="hidden md:block w-[45%]"></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="flex flex-col md:flex-row items-start md:items-center w-full justify-between group">
+                        <div class="hidden md:block w-[45%]"></div>
+                        <div class="absolute md:relative left-0 md:left-auto w-12 h-12 md:w-[10%] flex justify-center shrink-0">
+                            <div class="w-12 h-12 rounded-full border-4 border-white bg-[#D9873E] text-white flex items-center justify-center shadow-xl relative z-10 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-check-circle text-lg"></i>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-[45%] md:pl-8 mb-4 md:mb-0 pl-16 md:pl-0">
+                            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm group-hover:border-[#D9873E]/50 group-hover:shadow-lg transition-all duration-300">
+                                <span class="text-[#D9873E] text-sm font-bold uppercase tracking-widest mb-1 block">Step 04</span>
+                                <h4 class="font-bold text-primary-dark mb-2 text-lg">Expert Installation</h4>
+                                <p class="text-sm text-slate-500 leading-relaxed">Professional installation by our seasoned team, ensuring absolute perfection and cleanliness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div></div>
+
+
+        
+<!-- Dark SEO Content Block -->
+<div class="bg-primary-dark text-slate-300 p-8 md:p-12 rounded-3xl mb-16 shadow-2xl relative overflow-hidden group">
+    <!-- Decorative background elements for luxury feel -->
+    <div class="absolute top-0 right-0 w-64 h-64 bg-accent opacity-5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent opacity-5 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
+    
+    <div class="relative z-10 space-y-10">
+        <div>
+            <div class="flex items-center space-x-3 mb-4">
+                <i class="fas fa-gem text-accent text-xl"></i>
+                <h3 class="text-2xl font-bold text-white tracking-wide">The Architectural Impact of Curtain Wall Systems</h3>
+            </div>
+            <p class="leading-relaxed text-[15px] opacity-90">Curtain walls represent the pinnacle of modern architectural design, defining the iconic skylines of cities like Dubai. These non-load bearing, multi-story glass facades wrap buildings in a sleek, sheer envelope of reflective elegance. By replacing traditional solid walls with expansive curtain glazing, architects can achieve maximum transparency, blurring the lines between the exterior workspace and the exterior urban landscape. The result is a monumental aesthetic that commands attention while providing occupants with unobstructed, breathtaking panoramic views.</p>
+        </div>
+        
+        <div>
+            <div class="flex items-center space-x-3 mb-4">
+                <i class="fas fa-shield-alt text-accent text-xl"></i>
+                <h3 class="text-2xl font-bold text-white tracking-wide">Advanced Materials & Structural Engineering</h3>
+            </div>
+            <p class="leading-relaxed text-[15px] opacity-90">Our curtain wall systems—both stick-built and unitized—are masterpieces of structural engineering. Designed to gracefully absorb and transfer immense wind loads, seismic forces, and thermal expansion back to the building's primary framework, they ensure absolute structural stability. We utilize thermally broken aluminum transoms and mullions combined with high-performance acoustic and solar-control glazing. This complex integration prevents water penetration, mitigates urban noise pollution, and strictly regulates indoor climates across massive facade areas.</p>
+        </div>
+        
+        <div>
+            <div class="flex items-center space-x-3 mb-4">
+                <i class="fas fa-map-marker-alt text-accent text-xl"></i>
+                <h3 class="text-2xl font-bold text-white tracking-wide">Why Choose Our Expertise in Dubai</h3>
+            </div>
+            <p class="leading-relaxed text-[15px] opacity-90">Executing a flawless curtain wall installation in a demanding environment requires a highly specialized skill set. As a leading facade engineering firm in Dubai, we manage the entire lifecycle of your glazing project. From rigorous 3D structural modeling and factory-controlled fabrication to precise crane-assisted installation, our methodology guarantees a perfect, weather-tight envelope. Trust us to deliver a high-performance facade that enhances your building's energy efficiency, aesthetic prestige, and long-term asset value.</p>
+        </div>
+    </div>
+</div>
+
+<h3 class="text-3xl font-bold text-primary-dark mb-8">Project Showcase</h3>
+        <div class="grid grid-cols-2 gap-4 mb-16">
+            <div class="col-span-2 h-80 md:h-96 rounded-2xl overflow-hidden group shadow-md">
+                <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1643063231577-959abf98b59c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+            </div>
+            <div class="h-48 md:h-64 rounded-2xl overflow-hidden group shadow-md">
+                <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1580469322701-45b34d5e6e9b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+            </div>
+            <div class="h-48 md:h-64 rounded-2xl overflow-hidden group shadow-md">
+                <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('https://images.unsplash.com/photo-1696846913141-634e2b1652e3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+            </div>
+        </div>
+
+<h3 class="text-3xl font-bold text-primary-dark mb-8">Frequently Asked Questions</h3>
+        <div class="space-y-4 mb-8">
+            <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                <summary class="flex items-center justify-between gap-3 px-6 py-5 font-semibold text-primary-dark cursor-pointer hover:bg-slate-50 transition-colors">
+                    <span>What is the difference between a stick system and a unitized system?</span>
+                    <span class="transition-transform duration-300 group-open:rotate-180 text-accent">
+                        <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="px-6 pb-6 text-slate-500 text-sm leading-relaxed border-t border-slate-50 pt-4">
+                    Stick systems are assembled piece-by-piece on-site, making them ideal for low-to-mid rise buildings with complex geometries. Unitized systems are pre-assembled in our factory and hoisted into place, significantly speeding up installation for high-rise projects.
+                </div>
+            </details>
+            <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                <summary class="flex items-center justify-between gap-3 px-6 py-5 font-semibold text-primary-dark cursor-pointer hover:bg-slate-50 transition-colors">
+                    <span>How do curtain walls handle wind loads?</span>
+                    <span class="transition-transform duration-300 group-open:rotate-180 text-accent">
+                        <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="px-6 pb-6 text-slate-500 text-sm leading-relaxed border-t border-slate-50 pt-4">
+                    Our engineering team meticulously calculates wind loads based on building height and geographic location, designing structural aluminum mullions that safely transfer these forces back to the building's primary structure.
+                </div>
+            </details>
+            <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                <summary class="flex items-center justify-between gap-3 px-6 py-5 font-semibold text-primary-dark cursor-pointer hover:bg-slate-50 transition-colors">
+                    <span>Do curtain walls offer sound insulation?</span>
+                    <span class="transition-transform duration-300 group-open:rotate-180 text-accent">
+                        <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="px-6 pb-6 text-slate-500 text-sm leading-relaxed border-t border-slate-50 pt-4">
+                    Yes, by utilizing specialized laminated acoustic glass and thermally broken mullions, our curtain wall systems provide excellent attenuation of exterior noise.
+                </div>
+            </details></div>
+
+</div>
+
+                <div class="lg:col-span-4 space-y-8 lg:sticky lg:top-32 lg:self-start" data-aos="fade-left">
+                    <div class="bg-primary-dark p-8 rounded-2xl text-white">
+                        <h3 class="text-2xl font-bold mb-4">Need a Consultation?</h3>
+                        <p class="text-slate-400 mb-8 text-sm leading-relaxed">Contact our expert team to discuss your Curtain Walls requirements and let us guide you towards the perfect solution.</p>
+                        <a href="contact.html" class="block text-center bg-accent hover:bg-[#c07332] text-white py-3 rounded-full transition-colors font-semibold">Get in Touch</a>
+                    </div>
+
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100">
+                        <h3 class="text-xl font-bold text-primary-dark mb-6">Other Services</h3>
+                        <ul class="space-y-4">
+                            <li><a href="doors-and-windows.html" class="text-slate-500 hover:text-accent transition-colors flex justify-between items-center"><span>Doors and Windows</span> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></li>
+                            <li class="border-t border-slate-200 pt-4"><a href="sliding-folding-doors.html" class="text-slate-500 hover:text-accent transition-colors flex justify-between items-center"><span>Sliding Folding Doors</span> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></li>
+                            <li class="border-t border-slate-200 pt-4"><a href="sliding-doors.html" class="text-slate-500 hover:text-accent transition-colors flex justify-between items-center"><span>Sliding Doors</span> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></li>
+                            <li class="border-t border-slate-200 pt-4"><a href="curtain-walls.html" class="text-accent hover:text-accent transition-colors flex justify-between items-center"><span>Curtain Walls</span> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></li>
+                            <li class="border-t border-slate-200 pt-4"><a href="skylight.html" class="text-slate-500 hover:text-accent transition-colors flex justify-between items-center"><span>Skylight</span> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></li>
+                            <li class="border-t border-slate-200 pt-4"><a href="substation-louvers.html" class="text-slate-500 hover:text-accent transition-colors flex justify-between items-center"><span>Substation Louvers</span> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Main Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <h2 class="text-2xl font-bold text-white mb-6">Exterior<span class="text-accent">Exterior</span></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Premium exterior and exterior design solutions. We bring your vision to life with precision, elegance, and uncompromised quality.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Quick Links</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition-colors">Our Services</a></li>
+                        <li><a href="gallery.html" class="hover:text-accent transition-colors">Portfolios</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Our Services</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="doors-and-windows.html" class="hover:text-accent transition-colors">Doors & Windows</a></li>
+                        <li><a href="sliding-folding-doors.html" class="hover:text-accent transition-colors">Sliding Folding Doors</a></li>
+                        <li><a href="sliding-doors.html" class="hover:text-accent transition-colors">Sliding Doors</a></li>
+                        <li><a href="curtain-walls.html" class="hover:text-accent transition-colors">Curtain Walls</a></li>
+                        <li><a href="skylight.html" class="hover:text-accent transition-colors">Skylights</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Contact Info</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-accent"></i>
+                            <span>123 Design Boulevard,<br>Creative District, NY 10012</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-accent"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-accent"></i>
+                            <span>info@exteriorexterior.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; 2026 ExteriorExterior. All rights reserved.</p>
+                <div class="space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100, easing: 'ease-out-cubic' });
+    </script>
+</body>
+</html>
