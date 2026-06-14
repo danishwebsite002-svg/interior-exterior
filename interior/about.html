@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Luxury Architecture & Interior Design Dubai</title>
+    <meta name="description" content="Learn about our architectural philosophy, our legacy since 1995, and how we design sustainable cities and premium interior spaces.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Caveat:wght@400;500;600;700&display=swap');
+      
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Outfit", sans-serif;
+      }
+      .font-serif {
+        font-family: "Playfair Display", serif !important;
+      }
+      h1 span, h2 span, h3 span {
+        color: #D9873E;
+      }
+
+      body { 
+        font-family: 'Inter', sans-serif; 
+        overflow-x: hidden; 
+        color: #1e293b; 
+      }
+        
+      /* Custom Colors */
+      .text-accent { color: #D9873E; }
+      .bg-accent { background-color: #D9873E; }
+      .border-accent { border-color: #D9873E; }
+      .bg-primary-dark { background-color: #2E3133; }
+      .text-primary-dark { color: #2E3133; }
+      .text-navy { color: #161B29; }
+      .bg-navy { background-color: #161B29; }
+      .bg-offwhite { background-color: #FBF9F6; }
+      
+      /* Premium Buttons */
+      .btn-outline {
+          border: 1px solid #e2e8f0;
+          transition: all 0.4s ease;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .btn-outline:hover {
+          border-color: #D9873E;
+          color: #D9873E;
+          background-color: rgba(217, 135, 62, 0.05);
+          transform: translateY(-2px);
+      }
+      
+      .btn-pill {
+          background-color: #2E3133;
+          color: white;
+          border-radius: 999px;
+          padding: 0.875rem 2.5rem;
+          display: inline-flex;
+          align-items: center;
+          font-size: 0.875rem;
+          font-weight: 500;
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+      .btn-pill:hover { 
+          background-color: #1a1c1d;
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+          transform: translateY(-2px);
+      }
+
+      .btn-copper {
+          background-color: #B27C5A;
+          color: #FFFFFF;
+          font-weight: 600;
+          transition: all 0.3s ease;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .btn-copper:hover { 
+          background-color: #161B29; 
+          color: #FFFFFF; 
+      }
+
+      /* Premium text shadow utility */
+      .text-shadow-premium {
+          text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6), 0 4px 20px rgba(0, 0, 0, 0.4);
+      }
+      
+      /* Smooth Image Hover */
+      .img-hover-zoom { transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+      .group:hover .img-hover-zoom { transform: scale(1.05); }
+
+      /* Background Shapes */
+      .bg-shape-1 {
+          position: absolute;
+          top: -10%;
+          right: -5%;
+          width: 400px;
+          height: 400px;
+          background-color: #D9873E;
+          opacity: 0.05;
+          border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+          z-index: 0;
+          animation: morph 8s ease-in-out infinite;
+          pointer-events: none;
+      }
+
+      
+      /* Custom Swiper Pagination for Testimonials */
+      .testimonials-pagination .swiper-pagination-bullet-active {
+          background-color: #B27C5A !important;
+          width: 24px !important;
+          border-radius: 4px !important;
+          transition: all 0.3s ease;
+      }
+      .testimonials-pagination .swiper-pagination-bullet {
+          background-color: #ffffff;
+          opacity: 0.5;
+          width: 8px;
+          height: 8px;
+          transition: all 0.3s ease;
+      }
+      .testimonials-pagination .swiper-pagination-bullet:hover {
+          opacity: 0.8;
+      }
+    
+      section:not(:first-of-type) p {
+        font-size: 18px !important;
+        line-height: 1.75 !important;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white">
+
+    <!-- Header / Navbar -->
+    <header class="w-full border-b border-slate-100 bg-white/90 backdrop-blur-md sticky top-0 z-50 transition-all duration-300">
+        <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8 py-5 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-6 h-6 rounded-full border-2 border-accent flex items-center justify-center">
+                    <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                </div>
+                <a href="index.html" class="text-xl font-bold tracking-tight text-primary-dark uppercase">Interior</a>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="index.html" class="hover:text-accent transition-colors">Home</a>
+                <a href="about.html" class="text-accent">About Us</a>
+                <a href="services.html" class="hover:text-accent transition-colors">Services</a>
+                <a href="gallery.html" class="hover:text-accent transition-colors">Portfolios</a>
+                <a href="blog.html" class="hover:text-accent transition-colors">Blog</a>
+                <a href="contact.html" class="hover:text-accent transition-colors">Contact</a>
+            </nav>
+            
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="contact.html" class="btn-outline px-6 py-2.5 rounded-full text-sm font-semibold text-slate-700">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Inner Page Banner -->
+        <section class="relative w-full h-[45vh] md:h-[50vh] flex flex-col items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2000&q=80');"></div>
+            <div class="absolute inset-0 bg-slate-900/75 mix-blend-multiply"></div>
+            <div class="relative z-10 text-center px-4" data-aos="fade-up">
+                <span class="text-accent text-sm font-bold uppercase tracking-widest mb-4 block">Our Philosophy</span>
+                <h1 class="text-6xl md:text-5xl lg:text-5xl font-bold text-white mb-6 tracking-tight capitalize">About Our Firm</h1>
+                <div class="flex items-center justify-center space-x-3 text-slate-300 text-sm font-medium tracking-widest uppercase">
+                    <a href="index.html" class="hover:text-accent transition-colors">Home</a>
+                    <span class="text-slate-400">/</span>
+                    <span class="text-accent">About Us</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Asymmetrical Architectural Grid Section -->
+        <section class="py-24 relative overflow-hidden bg-[#FBF9F6]">
+            <div class="bg-shape-1"></div>
+            <div class="max-w-[1400px] mx-auto px-4 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+                    
+                    <!-- Left Column (spans 7 cols on large desktop) -->
+                    <div class="lg:col-span-7 flex flex-col gap-12" data-aos="fade-right">
+                        <!-- Header Block -->
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <span class="w-8 h-[1px] bg-copper"></span>
+                                <p class="text-copper text-xs font-semibold tracking-widest uppercase" style="color: #B27C5A;">About Architecture</p>
+                            </div>
+                            <h2 class="text-4xl lg:text-5xl font-bold text-navy leading-[1.15] tracking-tight">
+                                Designing Cities of the Future with Sustainability at the Core
+                            </h2>
+                        </div>
+                        
+                        <!-- Sub-grid: Image & Text Stack -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                            <!-- Left: Curved architectural facade building -->
+                            <div class="rounded-3xl overflow-hidden shadow-lg aspect-[4/3] group">
+                                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover img-hover-zoom">
+                            </div>
+                            
+                            <!-- Right: Text column details -->
+                            <div class="flex flex-col justify-center pr-4">
+                                <h3 class="text-2xl font-bold text-navy mb-4 leading-tight">We're provide services since 1995</h3>
+                                <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                                    With over three decades of experience, we have been delivering trusted interior and architectural masterworks that unite creative design with structural engineering.
+                                </p>
+                                <a href="contact.html" class="btn-copper text-xs tracking-widest uppercase py-3.5 px-6 self-start rounded-full shadow-md hover:shadow-lg transition-all duration-300 inline-flex items-center gap-2">
+                                    Contact Us <i class="fas fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column (spans 5 cols on large desktop) -->
+                    <div class="lg:col-span-5" data-aos="fade-left">
+                        <div class="grid grid-cols-2 gap-8 items-start relative">
+                            <!-- Tall Portrait Image (top-left) -->
+                            <div class="col-span-1 rounded-3xl overflow-hidden shadow-lg aspect-[3/4] group">
+                                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover img-hover-zoom">
+                            </div>
+                            <!-- Spacer for layout alignment -->
+                            <div class="col-span-1"></div>
+                            
+                            <!-- Spacer to maintain layout staggering -->
+                            <div class="col-span-1"></div>
+                            
+                            <!-- Modern Glass Villa Image (bottom-right) -->
+                            <div class="col-span-1 rounded-3xl overflow-hidden shadow-lg aspect-[4/3] -mt-16 group relative z-20">
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover img-hover-zoom">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Are Section -->
+        <section class="w-full grid grid-cols-1 lg:grid-cols-12 items-stretch min-h-[650px] overflow-hidden relative bg-white">
+            <!-- Left: Image column with blueprint CAD overlay (spans 6 cols on lg) -->
+            <div class="lg:col-span-6 relative min-h-[450px] lg:min-h-auto overflow-hidden bg-slate-950">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-85" alt="Who We Are - Architectural Approach">
+                
+                <!-- Dark gradient overlay to blend into the blueprint area -->
+                <div class="absolute inset-0 bg-gradient-to-r from-slate-950/40 via-transparent to-transparent pointer-events-none"></div>
+                
+                <!-- Blueprint Schematic Overlay -->
+                <svg class="absolute inset-0 w-full h-full text-white/20 pointer-events-none" viewBox="0 0 500 500" preserveAspectRatio="none">
+                    <!-- Grid -->
+                    <defs>
+                        <pattern id="blueprint-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+                            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#blueprint-grid)" />
+                    
+                    <!-- Isometric/perspective wireframe sketch lines representing blueprint drafting -->
+                    <path d="M 40,380 L 220,310 L 400,380 M 220,310 L 220,160 M 40,380 L 40,230 L 220,160 L 400,230 L 400,380" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.2" />
+                    <!-- Window grid lines -->
+                    <path d="M 80,364 L 80,246 M 120,348 L 120,230 M 160,332 L 160,214 M 200,318 L 200,198" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.8" />
+                    <path d="M 260,326 L 260,206 M 300,342 L 300,222 M 340,358 L 340,238 M 380,372 L 380,252" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.8" />
+                    <!-- Floor separation -->
+                    <path d="M 40,305 L 220,235 L 400,305" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+                    <!-- Technical ticks and extension lines -->
+                    <path d="M 20,388 L 60,372 M 380,388 L 420,372 M 220,140 L 220,330 M 10,230 L 420,230" fill="none" stroke="rgba(255,255,255,0.1)" stroke-dasharray="3,3" stroke-width="0.8" />
+                </svg>
+                
+                <!-- Bottom technical info overlay -->
+                <div class="absolute bottom-6 left-8 right-8 text-white/35 text-[9px] font-mono tracking-widest uppercase pointer-events-none flex justify-between">
+                    <span>Scale: 1:75</span>
+                    <span>Sheet AR-001</span>
+                </div>
+            </div>
+            
+            <!-- Right: Text column (spans 6 cols on lg) -->
+            <div class="lg:col-span-6 bg-[#FBF9F6] flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-24 py-20 lg:py-24 relative">
+                <!-- Subtitle with accent line -->
+                <div class="flex items-center gap-3 mb-6" data-aos="fade-up">
+                    <span class="w-8 h-[1.5px] bg-[#B27C5A]"></span>
+                    <p class="text-[#B27C5A] text-xs font-bold tracking-[0.2em] uppercase">Who We Are</p>
+                </div>
+                
+                <!-- Title -->
+                <h2 class="text-3xl sm:text-4xl lg:text-[42px] font-bold text-navy leading-[1.15] tracking-tight mb-8" data-aos="fade-up" data-aos-delay="100">
+                    Discover Our Approach to<br> Innovative Architecture
+                </h2>
+                
+                <!-- Description -->
+                <p class="text-slate-500 text-[14px] leading-relaxed mb-10 max-w-xl font-light" data-aos="fade-up" data-aos-delay="200">
+                    We are a professional architecture firm dedicated to creating innovative, functional, and sustainable spaces. Our team combines creativity, technical expertise, and a client-focused approach to bring every project
+                </p>
+                
+                <!-- Checklist -->
+                <ul class="space-y-6 text-navy text-[14px]" data-aos="fade-up" data-aos-delay="300">
+                    <li class="flex items-start gap-4">
+                        <div class="flex-shrink-0 mt-0.5 w-[22px] h-[22px] rounded-full border border-[#B27C5A] flex items-center justify-center bg-transparent">
+                            <svg class="w-3 h-3 text-[#B27C5A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                            </svg>
+                        </div>
+                        <span class="text-slate-700 font-medium leading-relaxed">Crafting modern, aesthetic, and functional architectural solutions.</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="flex-shrink-0 mt-0.5 w-[22px] h-[22px] rounded-full border border-[#B27C5A] flex items-center justify-center bg-transparent">
+                            <svg class="w-3 h-3 text-[#B27C5A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                            </svg>
+                        </div>
+                        <span class="text-slate-700 font-medium leading-relaxed">Delivering tailored designs for homes, offices, and commercial space.</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="flex-shrink-0 mt-0.5 w-[22px] h-[22px] rounded-full border border-[#B27C5A] flex items-center justify-center bg-transparent">
+                            <svg class="w-3 h-3 text-[#B27C5A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                            </svg>
+                        </div>
+                        <span class="text-slate-700 font-medium leading-relaxed">Designing cohesive spaces from interiors to landscapes.</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="flex-shrink-0 mt-0.5 w-[22px] h-[22px] rounded-full border border-[#B27C5A] flex items-center justify-center bg-transparent">
+                            <svg class="w-3 h-3 text-[#B27C5A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                            </svg>
+                        </div>
+                        <span class="text-slate-700 font-medium leading-relaxed">Using advanced 3D modeling, BIM, and construction documentation.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Our Process Section -->
+        <section class="py-28 relative overflow-hidden border-t border-slate-100 bg-[#FBF9F6]">
+            <!-- Ambient glowing background lights for depth -->
+            <div class="absolute -top-40 -left-40 w-96 h-96 bg-[#B27C5A]/5 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-40 -right-40 w-[450px] h-[450px] bg-[#B27C5A]/5 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="max-w-[1400px] mx-auto px-4 lg:px-8 relative z-10">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <div class="flex items-center justify-center gap-3 mb-4" data-aos="fade-up">
+                        <span class="w-8 h-[1px] bg-copper" style="background-color: #B27C5A;"></span>
+                        <p class="text-copper text-xs font-bold tracking-[0.2em] uppercase" style="color: #B27C5A;">Our Process</p>
+                        <span class="w-8 h-[1px] bg-copper" style="background-color: #B27C5A;"></span>
+                    </div>
+                    <h2 class="text-4xl lg:text-[44px] font-bold text-navy tracking-tight leading-tight" data-aos="fade-up" data-aos-delay="100">
+                        Our Step-by-Step Process Delivers
+                    </h2>
+                </div>
+
+                <!-- Process Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start max-w-[1200px] mx-auto relative">
+                    
+                    <!-- Dotted connecting paths between process badges (visible on desktop) -->
+                    <svg class="absolute top-0 left-0 w-full h-full text-[#B27C5A]/25 hidden lg:block pointer-events-none z-0" viewBox="0 0 1000 400" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="7,7" stroke-linecap="round">
+                        <!-- Path 1: Badge 1 (approx 315, 128) to Badge 2 (approx 615, 270) -->
+                        <path d="M 315,128 C 450,128 470,270 615,270" />
+                        <!-- Path 2: Badge 2 (approx 665, 270) to Badge 3 (approx 965, 128) -->
+                        <path d="M 665,270 C 810,270 830,128 965,128" />
+                    </svg>
+
+                    <!-- Step 01 -->
+                    <div class="border border-slate-100/60 bg-white rounded-[2rem] p-10 relative group shadow-[0_15px_45px_rgba(22,27,41,0.03)] hover:shadow-[0_25px_60px_rgba(178,124,90,0.12)] hover:border-copper/30 hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500 min-h-[350px] flex flex-col justify-between overflow-visible lg:mt-12 z-10" data-aos="fade-up" data-aos-delay="200">
+                        <!-- Top Glowing Line Accent on Hover -->
+                        <div class="absolute top-0 left-10 right-10 h-[3px] bg-gradient-to-r from-[#D9873E] to-[#B27C5A] rounded-b-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                        <!-- Background Faint Blueprint Sketch -->
+                        <svg class="absolute bottom-4 right-4 w-44 h-44 text-[#B27C5A] opacity-[0.06] pointer-events-none group-hover:scale-110 group-hover:opacity-[0.09] transition-all duration-700" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5">
+                            <path d="M10 80 L50 60 L90 80 M50 60 L50 20 M10 80 L10 40 L50 20 L90 40 L90 80 M10 60 L50 40 L90 60 M30 70 L30 50 M70 70 L70 50" />
+                        </svg>
+                        
+                        <div>
+                            <!-- Glowing Metallic Number -->
+                            <span class="text-7xl font-extrabold leading-none block tracking-tighter mb-6 select-none bg-gradient-to-r from-[#D9873E] via-[#C58356] to-[#B27C5A] bg-clip-text text-transparent">01</span>
+                            
+                            <!-- Content -->
+                            <h3 class="text-2xl font-bold text-[#161B29] mb-4 group-hover:text-copper transition-colors duration-300">Planning & Ideas</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed font-light pr-4">
+                                Architects maintain communication with client throughout project, providing updates on progress..
+                            </p>
+                        </div>
+                        
+                        <!-- Floating Icon Badge -->
+                        <div class="absolute top-20 -right-6 w-14 h-14 bg-white border border-slate-100/80 rounded-2xl shadow-[0_8px_20px_rgba(22,27,41,0.04)] group-hover:border-[#B27C5A]/40 group-hover:shadow-[0_12px_25px_rgba(178,124,90,0.18)] flex items-center justify-center group-hover:-translate-y-1 transition-all duration-300 z-30">
+                            <!-- Blueprint Line Art Icon (drafting board) -->
+                            <svg class="w-7 h-7 text-[#B27C5A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                                <rect x="2" y="4" width="20" height="13" rx="1.5" stroke-linejoin="round"/>
+                                <path d="M5 7h8M5 11h6M5 14h10" stroke-linecap="round"/>
+                                <path d="M12 14l6-6v6h-6z" fill="rgba(178,124,90,0.15)" stroke-linejoin="round"/>
+                                <line x1="10" y1="6" x2="20" y2="16" stroke-linecap="round"/>
+                                <path d="M19 19H5M9 21h6" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Step 02 (Alternating Text Top, Number Bottom) -->
+                    <div class="border border-slate-100/60 bg-white rounded-[2rem] p-10 relative group shadow-[0_15px_45px_rgba(22,27,41,0.03)] hover:shadow-[0_25px_60px_rgba(178,124,90,0.12)] hover:border-copper/30 hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500 min-h-[350px] flex flex-col justify-between overflow-visible z-10" data-aos="fade-up" data-aos-delay="300">
+                        <!-- Top Glowing Line Accent on Hover -->
+                        <div class="absolute top-0 left-10 right-10 h-[3px] bg-gradient-to-r from-[#D9873E] to-[#B27C5A] rounded-b-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                        <!-- Background Faint Blueprint Sketch -->
+                        <svg class="absolute top-4 right-4 w-44 h-44 text-[#B27C5A] opacity-[0.06] pointer-events-none group-hover:scale-110 group-hover:opacity-[0.09] transition-all duration-700" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5">
+                            <path d="M10 80 L50 60 L90 80 M50 60 L50 20 M10 80 L10 40 L50 20 L90 40 L90 80 M10 60 L50 40 L90 60 M30 70 L30 50 M70 70 L70 50" />
+                        </svg>
+                        
+                        <div>
+                            <!-- Content -->
+                            <h3 class="text-2xl font-bold text-[#161B29] mb-4 group-hover:text-copper transition-colors duration-300">Design Development</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed font-light pr-4 mb-6">
+                                Architects maintain communication with client throughout project, providing updates on progress..
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <!-- Glowing Metallic Number -->
+                            <span class="text-7xl font-extrabold leading-none block tracking-tighter select-none bg-gradient-to-r from-[#D9873E] via-[#C58356] to-[#B27C5A] bg-clip-text text-transparent">02</span>
+                        </div>
+                        
+                        <!-- Floating Icon Badge -->
+                        <div class="absolute bottom-20 -right-6 w-14 h-14 bg-white border border-slate-100/80 rounded-2xl shadow-[0_8px_20px_rgba(22,27,41,0.04)] group-hover:border-[#B27C5A]/40 group-hover:shadow-[0_12px_25px_rgba(178,124,90,0.18)] flex items-center justify-center group-hover:-translate-y-1 transition-all duration-300 z-30">
+                            <!-- Blueprint Line Art Icon (compass) -->
+                            <svg class="w-7 h-7 text-[#B27C5A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                                <path d="M3 19a9 9 0 019-9h0a9 9 0 019 9" stroke-dasharray="2,2"/>
+                                <path d="M12 4l-4 13M12 4l4 13" stroke-linecap="round"/>
+                                <circle cx="12" cy="3" r="1.5"/>
+                                <path d="M9.5 7h5" />
+                                <circle cx="12" cy="5.5" r="0.5" fill="currentColor"/>
+                                <path d="M8 17l-1 2M16 17l1 2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Step 03 -->
+                    <div class="border border-slate-100/60 bg-white rounded-[2rem] p-10 relative group shadow-[0_15px_45px_rgba(22,27,41,0.03)] hover:shadow-[0_25px_60px_rgba(178,124,90,0.12)] hover:border-copper/30 hover:-translate-y-2 hover:scale-[1.01] transition-all duration-500 min-h-[350px] flex flex-col justify-between overflow-visible lg:mt-12 z-10" data-aos="fade-up" data-aos-delay="400">
+                        <!-- Top Glowing Line Accent on Hover -->
+                        <div class="absolute top-0 left-10 right-10 h-[3px] bg-gradient-to-r from-[#D9873E] to-[#B27C5A] rounded-b-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                        <!-- Background Faint Blueprint Sketch -->
+                        <svg class="absolute bottom-4 right-4 w-44 h-44 text-[#B27C5A] opacity-[0.06] pointer-events-none group-hover:scale-110 group-hover:opacity-[0.09] transition-all duration-700" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5">
+                            <path d="M10 80 L50 60 L90 80 M50 60 L50 20 M10 80 L10 40 L50 20 L90 40 L90 80 M10 60 L50 40 L90 60 M30 70 L30 50 M70 70 L70 50" />
+                        </svg>
+                        
+                        <div>
+                            <!-- Glowing Metallic Number -->
+                            <span class="text-7xl font-extrabold leading-none block tracking-tighter mb-6 select-none bg-gradient-to-r from-[#D9873E] via-[#C58356] to-[#B27C5A] bg-clip-text text-transparent">03</span>
+                            
+                            <!-- Content -->
+                            <h3 class="text-2xl font-bold text-[#161B29] mb-4 group-hover:text-copper transition-colors duration-300">Feedback & Improve</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed font-light pr-4">
+                                Architects maintain communication with client throughout project, providing updates on progress..
+                            </p>
+                        </div>
+                        
+                        <!-- Floating Icon Badge -->
+                        <div class="absolute top-20 -right-6 w-14 h-14 bg-white border border-slate-100/80 rounded-2xl shadow-[0_8px_20px_rgba(22,27,41,0.04)] group-hover:border-[#B27C5A]/40 group-hover:shadow-[0_12px_25px_rgba(178,124,90,0.18)] flex items-center justify-center group-hover:-translate-y-1 transition-all duration-300 z-30">
+                            <!-- Blueprint Line Art Icon (blueprint + pencil/gear) -->
+                            <svg class="w-7 h-7 text-[#B27C5A]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                                <rect x="3" y="5" width="14" height="14" rx="1" stroke-dasharray="3,3"/>
+                                <circle cx="15" cy="15" r="3"/>
+                                <path d="M15 11v1M15 18v1M11 15h1M18 15h1"/>
+                                <path d="M7 17L17 7l2 2-10 10-2.5.5.5-2.5z" fill="rgba(178,124,90,0.1)"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Testimonials Section -->
+        <section class="relative py-28 w-full overflow-hidden bg-[#0F1115] lg:bg-transparent border-t border-slate-900">
+            <!-- Absolute split background (visible on lg screens) -->
+            <div class="absolute inset-0 w-full h-full hidden lg:grid lg:grid-cols-12 pointer-events-none">
+                <!-- Left 5 cols: Bridge Image -->
+                <div class="lg:col-span-5 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1200');"></div>
+                <!-- Right 7 cols: Dark Villa with mask overlay -->
+                <div class="lg:col-span-7 relative bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200');">
+                    <div class="absolute inset-0 bg-[#0F1115]/95"></div>
+                </div>
+            </div>
+
+            <!-- Content container -->
+            <div class="max-w-[1400px] mx-auto px-4 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+                    
+                    <!-- Left empty space on large desktop (corresponds to the bridge column) -->
+                    <div class="hidden lg:block lg:col-span-5"></div>
+                    
+                    <!-- Right content column (takes 7 cols, aligning over the dark background) -->
+                    <div class="lg:col-span-7 flex flex-col w-full">
+                        <!-- Header -->
+                        <div class="mb-14 text-left pl-0 lg:pl-10" data-aos="fade-up">
+                            <div class="flex items-center gap-3 mb-4">
+                                <span class="w-8 h-[1.5px] bg-[#B27C5A]"></span>
+                                <p class="text-[#B27C5A] text-xs font-bold tracking-[0.2em] uppercase">Clients Feedback</p>
+                                <span class="w-8 h-[1.5px] bg-[#B27C5A]"></span>
+                            </div>
+                            <h2 class="text-3xl sm:text-4xl lg:text-[40px] font-bold text-white leading-[1.2] tracking-tight max-w-2xl">
+                                Our Clients Speak For Us, our<br class="hidden sm:inline"> Expertise and Execution
+                            </h2>
+                        </div>
+                        
+                        <!-- Swiper Carousel Container -->
+                        <div class="swiper testimonials-swiper w-full pl-0 lg:pl-10 relative overflow-visible pb-16">
+                            <div class="swiper-wrapper">
+                                <!-- Slide 01 -->
+                                <div class="swiper-slide h-auto">
+                                    <div class="bg-white rounded-3xl p-8 md:p-10 shadow-2xl flex flex-col justify-between min-h-[320px] h-full border border-slate-100/10 hover:border-[#B27C5A]/30 transition-all duration-500 hover:-translate-y-1">
+                                        <div>
+                                            <div class="flex justify-between items-start">
+                                                <svg class="w-10 h-10 text-[#B27C5A] opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                                </svg>
+                                                <div class="text-right">
+                                                    <span class="text-slate-800 text-xs font-bold block mb-1">4.9/5.0</span>
+                                                    <div class="flex gap-0.5 justify-end">
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-slate-600 text-[14px] leading-relaxed my-6 font-light">
+                                                "From concept to execution, the design process was smooth and professional. The final outcome exceeded expectations with a perfect balance of modern architectural."
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <hr class="border-slate-100 my-4">
+                                            <div class="flex items-center gap-4">
+                                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" class="w-10 h-10 rounded-full object-cover border border-slate-200" alt="John Doe">
+                                                <div>
+                                                    <h4 class="text-navy font-bold text-sm">John Doe</h4>
+                                                    <p class="text-slate-400 text-xs font-semibold">CEO of Arctix</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Slide 02 -->
+                                <div class="swiper-slide h-auto">
+                                    <div class="bg-white rounded-3xl p-8 md:p-10 shadow-2xl flex flex-col justify-between min-h-[320px] h-full border border-slate-100/10 hover:border-[#B27C5A]/30 transition-all duration-500 hover:-translate-y-1">
+                                        <div>
+                                            <div class="flex justify-between items-start">
+                                                <svg class="w-10 h-10 text-[#B27C5A] opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                                </svg>
+                                                <div class="text-right">
+                                                    <span class="text-slate-800 text-xs font-bold block mb-1">4.2/5.0</span>
+                                                    <div class="flex gap-0.5 justify-end">
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-slate-600 text-[14px] leading-relaxed my-6 font-light">
+                                                "Architecture design is the art and science of design creating functional, aesthetic & sustainable spaces. It combines creativity with technical expertise to transform ideas"
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <hr class="border-slate-100 my-4">
+                                            <div class="flex items-center gap-4">
+                                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop" class="w-10 h-10 rounded-full object-cover border border-slate-200" alt="John Doe">
+                                                <div>
+                                                    <h4 class="text-navy font-bold text-sm">John Doe</h4>
+                                                    <p class="text-slate-400 text-xs font-semibold">CEO of Arctix</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 03 -->
+                                <div class="swiper-slide h-auto">
+                                    <div class="bg-white rounded-3xl p-8 md:p-10 shadow-2xl flex flex-col justify-between min-h-[320px] h-full border border-slate-100/10 hover:border-[#B27C5A]/30 transition-all duration-500 hover:-translate-y-1">
+                                        <div>
+                                            <div class="flex justify-between items-start">
+                                                <svg class="w-10 h-10 text-[#B27C5A] opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                                </svg>
+                                                <div class="text-right">
+                                                    <span class="text-slate-800 text-xs font-bold block mb-1">5.0/5.0</span>
+                                                    <div class="flex gap-0.5 justify-end">
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-slate-600 text-[14px] leading-relaxed my-6 font-light">
+                                                "The level of customization and attention to structural details was exemplary. Our villa facade now stands as a landmark in the neighborhood, fully representing our style."
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <hr class="border-slate-100 my-4">
+                                            <div class="flex items-center gap-4">
+                                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&auto=format&fit=crop" class="w-10 h-10 rounded-full object-cover border border-slate-200" alt="Sarah Jenkins">
+                                                <div>
+                                                    <h4 class="text-navy font-bold text-sm">Sarah Jenkins</h4>
+                                                    <p class="text-slate-400 text-xs font-semibold">Founder of CoreSpace</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 04 -->
+                                <div class="swiper-slide h-auto">
+                                    <div class="bg-white rounded-3xl p-8 md:p-10 shadow-2xl flex flex-col justify-between min-h-[320px] h-full border border-slate-100/10 hover:border-[#B27C5A]/30 transition-all duration-500 hover:-translate-y-1">
+                                        <div>
+                                            <div class="flex justify-between items-start">
+                                                <svg class="w-10 h-10 text-[#B27C5A] opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                                </svg>
+                                                <div class="text-right">
+                                                    <span class="text-slate-800 text-xs font-bold block mb-1">4.8/5.0</span>
+                                                    <div class="flex gap-0.5 justify-end">
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                        <i class="fa-solid fa-star text-[10px] text-[#D9873E]"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-slate-600 text-[14px] leading-relaxed my-6 font-light">
+                                                "Outstanding project execution from inception to completion. They managed budgets and timelines with complete transparency, and the result is breathtaking."
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <hr class="border-slate-100 my-4">
+                                            <div class="flex items-center gap-4">
+                                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&auto=format&fit=crop" class="w-10 h-10 rounded-full object-cover border border-slate-200" alt="Michael Chen">
+                                                <div>
+                                                    <h4 class="text-navy font-bold text-sm">Michael Chen</h4>
+                                                    <p class="text-slate-400 text-xs font-semibold">Director at Horizon Properties</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Custom Navigation & Pagination Controls -->
+                            <div class="flex items-center justify-between mt-10">
+                                <div class="testimonials-pagination !relative !bottom-0 !w-auto"></div>
+                                <div class="flex gap-4">
+                                    <button class="testimonials-prev w-12 h-12 rounded-full border border-[#B27C5A]/30 hover:border-[#B27C5A] flex items-center justify-center text-[#B27C5A] hover:bg-[#B27C5A]/10 transition-all duration-300">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                    <button class="testimonials-next w-12 h-12 rounded-full border border-[#B27C5A]/30 hover:border-[#B27C5A] flex items-center justify-center text-[#B27C5A] hover:bg-[#B27C5A]/10 transition-all duration-300">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Main Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <h2 class="text-2xl font-bold text-white mb-6">Exterior<span class="text-accent">Interior</span></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Premium exterior and interior design solutions. We bring your vision to life with precision, elegance, and uncompromised quality.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Quick Links</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-accent">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition-colors">Our Services</a></li>
+                        <li><a href="gallery.html" class="hover:text-accent transition-colors">Portfolios</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Our Services</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="doors-and-windows.html" class="hover:text-accent transition-colors">Doors & Windows</a></li>
+                        <li><a href="sliding-folding-doors.html" class="hover:text-accent transition-colors">Sliding Folding Doors</a></li>
+                        <li><a href="sliding-doors.html" class="hover:text-accent transition-colors">Sliding Doors</a></li>
+                        <li><a href="curtain-walls.html" class="hover:text-accent transition-colors">Curtain Walls</a></li>
+                        <li><a href="skylight.html" class="hover:text-accent transition-colors">Skylights</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold mb-6 text-lg">Contact Info</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-accent"></i>
+                            <span>123 Design Boulevard,<br>Creative District, NY 10012</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-accent"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-accent"></i>
+                            <span>info@exteriorinterior.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; 2026 ExteriorInterior. All rights reserved.</p>
+                <div class="space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100, easing: 'ease-out-cubic' });
+        
+        // Initialize Testimonials Swiper
+        const testimonialsSwiper = new Swiper('.testimonials-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            grabCursor: true,
+            breakpoints: {
+                992: {
+                    slidesPerView: 2,
+                }
+            },
+            pagination: {
+                el: '.testimonials-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.testimonials-next',
+                prevEl: '.testimonials-prev',
+            }
+        });
+    </script>
+</body>
+</html>
