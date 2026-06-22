@@ -266,18 +266,7 @@
       <div
         class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8 py-5 flex justify-between items-center"
       >
-        <div class="flex items-center space-x-2">
-          <div
-            class="w-6 h-6 rounded-full border-2 border-accent flex items-center justify-center"
-          >
-            <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
-          </div>
-          <a
-            href="index.html"
-            class="text-xl font-bold tracking-tight text-primary-dark uppercase"
-            >Exterior</a
-          >
-        </div>
+        <a href="index.html"><img src="../assets/logoheader.png" alt="Kiian Prime Technical Services L.L.C" class="h-10 w-auto"></a>
 
         <nav
           class="hidden md:flex space-x-8 text-sm font-medium text-slate-600"
@@ -304,8 +293,12 @@
             >Contact Us</a
           >
         </div>
-      </div>
-    </header>
+      
+          <button class="mobile-menu-btn md:hidden text-slate-800 focus:outline-none ml-auto" aria-label="Open Menu">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+      </header>
 
     <!-- 2. Hero Slider Section -->
     <section class="w-full relative h-[85vh] md:h-[90vh]">
@@ -594,17 +587,6 @@
                 </div>
                 <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Aluminium Fences</h3>
                 <p class="text-slate-500 text-sm leading-relaxed pr-4">Durable, modern boundary solutions combining security and aesthetics.</p>
-              </a>
-            </div>
-    
-            <div class="swiper-slide">
-              <a href="doors-and-windows.html" class="group block cursor-pointer">
-                <div class="w-full h-64 md:h-72 rounded-2xl overflow-hidden mb-6 relative shadow-lg">
-                  <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1768226911839-6358bf44eee5?q=80&w=687&auto=format&fit=crop');"></div>
-                  <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
-                </div>
-                <h3 class="text-xl font-bold text-primary-dark mb-2 group-hover:text-accent transition-colors">Doors & Windows</h3>
-                <p class="text-slate-500 text-sm leading-relaxed pr-4">High-performance architectural glazing for luxury properties.</p>
               </a>
             </div>
     
@@ -1581,6 +1563,41 @@
       </div>
     </section>
 
+    
+        <!-- Featured Projects Section -->
+    <section class="w-full py-24 bg-white" id="featured-projects">
+      <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16" data-aos="fade-up">
+          <div>
+            <span class="text-accent text-sm font-bold uppercase tracking-widest mb-4 block">Featured Projects</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-primary-dark">Latest Signature<br />Developments</h2>
+          </div>
+          <a href="gallery.html" class="text-primary-dark font-bold border-b-2 border-primary-dark hover:border-accent hover:text-accent transition-colors pb-1 text-sm uppercase tracking-widest hidden md:block">View Gallery</a>
+        </div>
+
+        <!-- Project 1: Saadiyat Island -->
+        <div class="mb-16">
+          <h3 class="text-2xl font-bold text-primary-dark mb-6 border-l-4 border-accent pl-4">Saadiyat Island, Abu Dhabi</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="rounded-2xl overflow-hidden group cursor-pointer h-[400px] md:h-[500px] shadow-lg" data-aos="fade-up">
+              <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('../assets/Saadiyat_Island_Abudhabi_image1.jpeg');"></div>
+            </div>
+            <div class="rounded-2xl overflow-hidden group cursor-pointer h-[400px] md:h-[500px] shadow-lg" data-aos="fade-up" data-aos-delay="200">
+              <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('../assets/Saadiyat_Island_Abudhabi_image2.png');"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Dubai Hills Estate -->
+        <div>
+          <h3 class="text-2xl font-bold text-primary-dark mb-6 border-l-4 border-accent pl-4">Dubai Hills Estate</h3>
+          <div class="rounded-2xl overflow-hidden group cursor-pointer h-[400px] md:h-[600px] shadow-lg" data-aos="fade-up">
+            <div class="w-full h-full bg-cover bg-center img-hover-zoom" style="background-image: url('../assets/Dubai_Hills_Estate.png');"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Blog & News Section -->
     <section class="w-full py-24 bg-[#FBF9F6]">
       <div class="w-[90%] max-w-[90%] mx-auto px-4 md:px-8">
@@ -1699,9 +1716,7 @@
       <div class="max-w-7xl mx-auto px-4 md:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div class="col-span-1 md:col-span-1">
-            <h2 class="text-2xl font-bold text-white mb-6">
-              KIIAN PRIME<span class="text-accent"> TECHNICAL</span>
-            </h2>
+            <a href="index.html"><img src="../assets/logofooter.png" alt="Kiian Prime Technical Services L.L.C" class="mb-6 h-12 w-auto"></a>
             <p class="text-slate-400 text-sm leading-relaxed mb-6">
               Premium exterior and exterior design solutions. We bring your
               vision to life with precision, elegance, and uncompromised
@@ -1709,24 +1724,14 @@
             </p>
             <div class="flex space-x-4">
               <a
-                href="#"
-                class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                href="#"
+                href="https://www.instagram.com/kiianprime/?hl=en" target="_blank"
                 class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"
                 ><i class="fab fa-instagram"></i
               ></a>
               <a
-                href="#"
+                href="https://www.youtube.com/channel/UCvDvB1lCBboo-tusaVES3Vw" target="_blank"
                 class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                href="#"
-                class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-all"
-                ><i class="fab fa-linkedin-in"></i
+                ><i class="fab fa-youtube"></i
               ></a>
             </div>
           </div>
@@ -1820,11 +1825,11 @@
               </li>
               <li class="flex items-center">
                 <i class="fas fa-phone-alt mr-3 text-accent"></i>
-                <span>+971 0521147860</span>
+                <span>+9758 191 2770</span>
               </li>
               <li class="flex items-center">
                 <i class="fas fa-envelope mr-3 text-accent"></i>
-                <span>Info@kiianprime.com</span>
+                <span>kiianprime@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -1833,7 +1838,7 @@
         <div
           class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500"
         >
-          <p>&copy; 2026 KIIAN PRIME TECHNICAL SERVICES L.L.C S.O.C. All rights reserved.</p>
+          <p>&copy; 2026 Kiian Prime Technical Services L.L.C All rights reserved. <span class="mx-2">|</span> Design and developed by <a href="https://goadslive.com" target="_blank" class="hover:text-accent transition-colors">goadslive.com</a></p>
           <div class="space-x-4 mt-4 md:mt-0">
             <a href="#" class="hover:text-white transition-colors"
               >Privacy Policy</a
@@ -1934,5 +1939,44 @@
         },
       });
     </script>
-  </body>
+  
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu fixed inset-0 bg-white/95 backdrop-blur-md z-[100] flex flex-col items-center justify-center space-y-8 opacity-0 pointer-events-none transition-all duration-300">
+      <button class="close-menu absolute top-6 right-6 text-slate-800 focus:outline-none" aria-label="Close Menu">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <a href="index.html" class="text-2xl font-bold text-slate-800 hover:text-accent">Home</a>
+      <a href="about.html" class="text-2xl font-bold text-slate-800 hover:text-accent">About Us</a>
+      <a href="services.html" class="text-2xl font-bold text-slate-800 hover:text-accent">Services</a>
+      <a href="gallery.html" class="text-2xl font-bold text-slate-800 hover:text-accent">Portfolios</a>
+      <a href="blog.html" class="text-2xl font-bold text-slate-800 hover:text-accent">Blog</a>
+      <a href="contact.html" class="text-2xl font-bold text-slate-800 hover:text-accent">Contact</a>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const mobileMenuBtns = document.querySelectorAll('.mobile-menu-btn');
+        const closeMenuBtns = document.querySelectorAll('.close-menu');
+        const mobileMenus = document.querySelectorAll('.mobile-menu');
+
+        mobileMenuBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            mobileMenus.forEach(menu => {
+              menu.classList.remove('opacity-0', 'pointer-events-none');
+              menu.classList.add('opacity-100', 'pointer-events-auto');
+            });
+          });
+        });
+
+        closeMenuBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            mobileMenus.forEach(menu => {
+              menu.classList.remove('opacity-100', 'pointer-events-auto');
+              menu.classList.add('opacity-0', 'pointer-events-none');
+            });
+          });
+        });
+      });
+    </script>
+</body>
 </html>
